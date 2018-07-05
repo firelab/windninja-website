@@ -2377,7 +2377,7 @@ input, select, textarea {
 
 				ul.pagination li > .page.active {
 					background-color: #ffffff;
-					color: #242943;
+					color: #3C3C36;
 				}
 
 					ul.pagination li > .page.active:hover {
@@ -2974,13 +2974,13 @@ input, select, textarea {
 					width: 65em;
 				}
 
-			.spotlights > section:nth-child(2n) {
+			/*.spotlights > section:nth-child(2n) {
 				-moz-flex-direction: row-reverse;
 				-webkit-flex-direction: row-reverse;
 				-ms-flex-direction: row-reverse;
 				flex-direction: row-reverse;
 				background-color: #333856;
-			}
+			}*/
 
 				.spotlights > section:nth-child(2n) > .content {
 					-moz-align-items: -moz-flex-end;
@@ -3568,7 +3568,7 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #2a2f4a;
+		background-color: #3C3C36;
 	}
 
 		#main > * {
