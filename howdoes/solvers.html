@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>WindNinja Solvers</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="../index.html" class="logo"><strong>WINDNINJA</strong> <span>FIRELAB</span></a>
+					</header>
+
+				<!-- Menu -->
+
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>WindNinja Solvers</h1>
+									</header>
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<h3>Conservation of Mass</h3>
+											<ul style="font-size:20px">
+												<li>Minimizes change in initial wind field while conserving mass</li>
+												<li>Finite element method</li>
+												<li>Steady-state</li>
+												<li>Incompressible</li>
+											</ul>
+										</div>
+										<div class="col-6 col-12-small">
+											<h3>Conservation of Mass & Momentum</h3>
+											<ul style="font-size:20px">
+												<li>Solver for incompressible turbulent flow</li>
+												<li>Finite volume method</li>
+												<li>k-epsilon for turbulence</li>
+												<li>Incompressible</li>
+												<li>Semi-implicit method (simpleFoam)</li>
+												<!-- <a href="http://openfoam.org/"> <img src="http://firelab.github.io/windninja/assets/foam2.png" style="width:175px;height:65px;"> </a> -->
+											</ul>
+										</div>
+									</div>
+									<hr />
+									<div>
+										<h3>Computational Domain</h3>
+										<ul>
+										  <li>Native Solver:Native Mesher</li>
+										  <li>OpenFOAM solver: blockMesh, snappyHexMesh, extrudeMesh</li>
+										  <li>Terrain Following hexahedral cells</li>
+										  <li>Cells grow vertically with height</li>
+										  <li>Top height set as f(max(dx|dy|dz))</li>
+										</ul>
+										<div class="box alt">
+											<div class="row gtr-50 gtr-uniform">
+												<div class="col-4"><span class="image fit"><img src="../images/howdoes/native.png" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="../images/howdoes/opensolver.png" alt="" /></span></div>
+											</div>
+										</div>
+									</div>
+									<hr />
+									<div>
+										<h3>Boundary and Initial Conditions</h3>
+										<div class="row">
+											<div class="col-6 col-12-small">
+												<h4>Conservation of Mass</h4>
+												<ul style="font-size:20px">
+												<li>Ux and Uy set at all nodes, Uz=0</li>
+												<li>Log profile (neutral) used in vertical</li>
+												<li>Bilinear interpolation used in horizontal</li>
+												<li>Ground: Neumann (impermeable)</li>
+												<li>Sides and Top: zero-gradient</li>
+												</ul>
+											</div>
+											<div class="col-6 col-12-small">
+												<h4>Conservation of Mass &
+														Momentum</h4>
+														<ul style="font-size:20px">
+														<li>Interior initialized using same profiles as the inlet</li>
+														<li>Ground: non-equilibrium wall function</li>
+														<li>Sides and top: zero-gradient</li>
+														</ul>
+											</div>
+										</div>
+
+										<div class="box alt">
+											<div class="row gtr-50 gtr-uniform">
+												<div class="col-6"><span class="image fit"><img src="../images/howdoes/native2.png" alt="" /></span></div>
+												<div class="col-6"><span class="image fit"><img src="../images/howdoes/cfdsolver2.png" alt="" /></span></div>
+											</div>
+										</div>
+
+										<div>
+											<h4 style="color:white;" align="center"><a href="https://github.com/firelab/windninja/wiki/NinjaFOAM"> More Information on NinjaFOAM (Github Wiki)</a></h4>
+											<h3 style="color:white;" align="center"><a href="../howdoes/">Back to How Does WindNinja Work?</a></h3>
+										</div>
+									</div>
+							</section>
+
+					</div>
+
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<p style="text-align:center;"><img src="https://avatars1.githubusercontent.com/u/3028309?v=3&s=200" alt "firelab"></p>
+							<p style="text-align:center;"><a href="http://firelab.org/">firelab.org</a></p>
+							<ul class="icons">
+							</ul>
+							<ul class="copyright">
+								<li>&copy; RMRS Missoula Fire Sciences Laboratory</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/jquery.scrolly.min.js"></script>
+		<script src="../assets/js/jquery.scrollex.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
