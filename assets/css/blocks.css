@@ -1,0 +1,142 @@
+/* Custom Blocks */
+.block {
+ overflow:hidden;
+ min-height:200px
+}
+.block .block-body {
+ margin:30px;
+ min-height:140px;
+ position:relative;
+ height:100%
+}
+
+.col-wrapper {
+ font-size:15px;
+ color:#546E7A;
+ margin-left:-2px
+}
+.col {
+ float:left;
+ margin-bottom:1px;
+ padding-left:2px
+}
+.col-1 {
+ width:-webkit-calc(8.33333333% - (4px / 2));
+ width:calc(8.33333333% - (4px / 2))
+}
+.col-2 {
+ width:-webkit-calc(16.66666667% - (4px / 2));
+ width:calc(16.66666667% - (4px / 2))
+}
+.col-3 {
+ width:-webkit-calc(25% - (4px / 2));
+ width:calc(25% - (4px / 2))
+}
+.col-4 {
+ width:-webkit-calc(33.33333333% - (4px / 2));
+ width:calc(33.33333333% - (4px / 2))
+}
+.col-5 {
+ width:-webkit-calc(41.66666667% - (4px / 2));
+ width:calc(41.66666667% - (4px / 2))
+}
+.col-6 {
+ width:-webkit-calc(50% - (4px / 2));
+ width:calc(50% - (4px / 2))
+}
+.col-7 {
+ width:-webkit-calc(58.33333333% - (4px / 2));
+ width:calc(58.33333333% - (4px / 2))
+}
+.col-8 {
+ width:-webkit-calc(66.66666667% - (4px / 2));
+ width:calc(66.66666667% - (4px / 2))
+}
+.col-9 {
+ width:-webkit-calc(75% - (4px / 2));
+ width:calc(75% - (4px / 2))
+}
+.col-10 {
+ width:-webkit-calc(83.33333333% - (4px / 2));
+ width:calc(83.33333333% - (4px / 2))
+}
+.col-11 {
+ width:-webkit-calc(91.66666667% - (4px / 2));
+ width:calc(91.66666667% - (4px / 2))
+}
+.col-12 {
+ width:-webkit-calc(100% - (4px / 2));
+ width:calc(100% - (4px / 2))
+}
+.white {
+ background:#fefefe
+}
+.white-text {
+ color:#fefefe
+}
+.glass {
+ background:#41413b
+}
+.glass-text {
+ color:#6a6a5f
+}
+.grey {
+ background:#546E7A
+}
+.grey-text {
+ color:#546E7A
+}
+.teal {
+ background:#26A69A
+}
+.teal-text {
+ color:#26A69A
+}
+.green {
+ background:#4CAF50
+}
+.green-text {
+ color:#4CAF50
+}
+.lime {
+ background:#C6FF00
+}
+.lime-text {
+ color:#C6FF00
+}
+.yellow {
+ background:#FFEB3B
+}
+.yellow-text {
+ color:#FFEB3B
+}
+.orange {
+ background:#FB8C00
+}
+.orange-text {
+ color:#FB8C00
+}
+.red {
+ background:#F44336
+}
+.red-text {
+ color:#F44336
+}
+.pink {
+ background:#E91E63
+}
+.pink-text {
+ color:#E91E63
+}
+.purple {
+ background:#9C27B0
+}
+.purple-text {
+ color:#9C27B0
+}
+.blue {
+ background:#2196F3
+}
+.blue-text {
+ color:#2196F3
+}
