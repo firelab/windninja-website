@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>About WindNinja</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="icon"
+			type="image/png"
+			href="favicon.ico">
+	</head>
+	<body class="is-preload">
+		<style>
+			/*FAQS*/
+			.faq_question {
+			    margin: 0px;
+			    padding: 0px 0px 5px 0px;
+			    display: inline-block;
+			    cursor: pointer;
+			    font-weight: bold;
+			}
+
+			.faq_answer_container {
+			    height: 0px;
+			    overflow: hidden;
+			    padding: 0px;
+			}
+		</style>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>WINDNINJA</strong> <span>FIRELAB</span></a>
+						<nav>
+							<a href="about.html">About</a>
+							<a href="help.html">Help</a>
+							<a href="tutorials/">Tutorials</a>
+							<a href="https://weather.firelab.org/windninja_api/index.html">API</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>About</h1>
+									</header>
+									<p>Wind is one of the most influential environmental factors affecting wildland fire behavior. The complex terrain of fire-prone landscapes causes local changes in wind speed and direction that are not predicted well by standard weather models or expert judgment. WindNinja was developed to help fire managers predict these winds.</p>
+									<div class="faq_container">
+									   <div class="faq">
+									      <div class="faq_question"><h2>Purpose</h2></div>
+									           <div class="faq_answer_container">
+									              <div class="faq_answer">
+										              <p>WindNinja is a computer program that computes spatially varying wind fields for wildland fire and other applications requiring high resolution wind prediction in complex terrain. It was developed to be used by emergency responders within their typical operational constraints of fast simulation times (seconds), low CPU requirements (single processor laptops), and low technical expertise.</p>
+										              <!-- <br> -->
+										              <p>See Also:</p>
+										              <a href="howdoes/who_uses.html">Who Uses WindNinja?</a>
+										              <br>
+										              <br>
+									              </div>
+									            </div>
+									          </div>
+									        </div>
+									<div class="faq_container">
+									   <div class="faq">
+									      <div class="faq_question"><h2>Running WindNinja</h2></div>
+									           <div class="faq_answer_container">
+									              <div class="faq_answer">
+									              <p>WindNinja can be run in three different modes.</p>
+									              <ol>
+									                <li>1. User specified average wind speed and direction. (Domain Average)</li>
+									                <li>2. User specified data from a weather station. (Point Initialization)</li>
+									                <li>3. Coarse scale weather models from NOAA. (Weather Model Initialization)<li>
+									                </ol>
+									              <p>WindNinja also requires elevation data, date and time, and dominant vegetation type. (WindNinja can obtain much of this data from internet sources)</p>
+									              <p>See Also:</p>
+									              <!-- <p><a href="http://firelab.github.io/windninja/whois/">Who Uses WindNinja?</a></p> -->
+									              <p><a href="howdoes/">How Does WindNinja Work?</a></p>
+									              <p><a href="tutorials/">WindNinja Tutorials</a></p>
+									              <br>
+									              <br>
+									              </div>
+									            </div>
+									          </div>
+									        </div>
+									<div class="faq_container">
+									   <div class="faq">
+									      <div class="faq_question"><h2>Features</h2></div>
+									           <div class="faq_answer_container">
+									              <div class="faq_answer">
+									              <p>WindNinja has several optional features.</p>
+									              <ol>
+									                <li>1. Diurnal Slope Flow Model</li>
+									                <li>2. Non-neutral Atmospheric Stability Model</li>
+									                <li>3. OpenFOAM conservation of Mass and Momentum Solver (only available with Domain Average Initialization)</li>
+									              </ol>
+									              <p>See Also:</p>
+									              <p><a href="howdoes/">How Does WindNinja Work?</a></p>
+									              <p><a href="https://github.com/firelab/windninja/wiki/">Developer Documentation</a></p>
+									              <br>
+									              <br>
+									              </div>
+									            </div>
+									          </div>
+									        </div>
+									<div class="faq_container">
+									   <div class="faq">
+									      <div class="faq_question"><h2>Outputs</h2></div>
+									           <div class="faq_answer_container">
+									              <div class="faq_answer">
+									              <p>Outputs of the model can be viewed by a variety of programs</p>
+									              <ol>
+									                <li>1. Google Earth (.kmz)</li>
+									                <li>2. ASCII Grids of wind speed and direction for <a href="https://www.firelab.org/project/farsite">FARSITE</a> and <a href="https://www.firelab.org/project/flammap">FlamMap</a></li>
+									                <li>3. GIS shapefile for displaying wind vectors in GIS programs</li>
+									              </ol>
+									              <p>See Also:</p>
+									              <p><a href="howdoes/">How Does WindNinja Work?</a></p>
+									              <p><a href="tutorials/">WindNinja Tutorials on displaying outputs</a></p>
+									              <br
+									              <br>
+									              </div>
+									            </div>
+									          </div>
+									        </div>
+									<div class="faq_container">
+									   <div class="faq">
+									      <div class="faq_question"><h2>Specifications</h2></div>
+									           <div class="faq_answer_container">
+									              <div class="faq_answer">
+									              <p>WindNinja can run on Linux and 32/64-bit Windows (XP and higher) <a href="https://www.firelab.org/document/windninja-software">(Download Here)</a></p>
+									              <p>Running WindNinja on Linux requires <a href="building/">Building from source</a></p>
+									              <p><a href="building/">WindNinja can also be built from source on Windows</a></p>
+									              <p>Hardware Requirements:</p>
+									              <ul>
+									                <li>Minimum: 4 GB RAM, 2.0 GHz processing speed</li>
+									                <li>Reccomended: 8 GB RAM, 2.4 GHz processing speed</li>
+									              </ul>
+									              <p>See Also:</p>
+									              <p><a href="build/">Building WindNinja from Source</a></p>
+									              <p><a href="https://github.com/firelab/windninja">WindNinja on GitHub</a></p>
+									              <br>
+									              <br>
+									              </div>
+									            </div>
+									          </div>
+									        </div>
+									<div class="faq_container">
+									   <div class="faq">
+									      <div class="faq_question"><h2>WindNinja-Mobile</h2></div>
+									           <div class="faq_answer_container">
+									              <div class="faq_answer">
+									              <p>WindNinja is available as a mobile app. From the app, users can set up and run WindNinja on a remote server, and then download and view the results.</p>
+									              <p>See Also:</p>
+									              <p><a href="mobile/">WindNinja-Mobile</a></p>
+									              <p><a href="https://github.com/firelab/windninja-mobile  ">WindNinja-Mobile on GitHub</a></p>
+									              <br>
+									              <br>
+									              </div>
+									            </div>
+									          </div>
+									        </div>
+									<div class="faq_container">
+									   <div class="faq">
+									      <div class="faq_question"><h2>Incident Support</h2>
+									           <div class="faq_answer_container">
+									              <div class="faq_answer"><hr />
+									              <p><a href="faq.html">See FAQ</a></p>
+									              <p><a href="https://github.com/firelab/windninja/blob/master/NEWS.md">See the Change Log for release notes</a></p>
+									              <p><a href="mailto:wind.ninja.support@gmail.com">Contact the WindNinja Support Team</a></p>
+									              <br>
+									              <br>
+									              </div>
+									            </div>
+									          </div>
+									        </div>
+								</div>
+							</section>
+
+					</div>
+
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<p style="text-align:center;"><img src="https://avatars1.githubusercontent.com/u/3028309?v=3&s=200" alt "firelab"></p>
+							<p style="text-align:center;"><a href="http://firelab.org/">firelab.org</a></p>
+							<ul class="icons">
+							</ul>
+							<ul class="copyright">
+								<li>&copy; RMRS Missoula Fire Sciences Laboratory</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
+		 $(document).ready(function() {
+
+				$('.faq_question').click(function() {
+
+						if ($(this).parent().is('.open')){
+								$(this).closest('.faq').find('.faq_answer_container').animate({'height':'0'},500);
+								$(this).closest('.faq').removeClass('open');
+
+								}else{
+										var newHeight =$(this).closest('.faq').find('.faq_answer').height() +'px';
+										$(this).closest('.faq').find('.faq_answer_container').animate({'height':newHeight},500);
+										$(this).closest('.faq').addClass('open');
+								}
+							});
+						});
+		</script>
+
+	</body>
+</html>
