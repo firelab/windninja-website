@@ -1,0 +1,50 @@
+<html>
+<head>
+  <!--Leaflet Scripts  -->
+  <script src="https://weather.firelab.org/leaflet/dist/leaflet.js"></script>
+  <script src="https://weather.firelab.org/leaflet-plugins/layer/vector/KML.js"></script>
+  <script src="https://weather.firelab.org/js_files/jquery.js"></script>
+  <link rel="stylesheet" href="https://weather.firelab.org/leaflet/dist/leaflet.css" />
+</head>
+
+<body>
+  <div id="map" style="width: 1200px; height: 700px;"></div>
+  <script type='text/javascript'>
+
+  var map = new L.Map('map', {center: new L.LatLng(46.6670,-111.0), zoom: 8});
+  var osm = new L.TileLayer('http://topofire.dbs.umt.edu/topofire_v2/data/osmUShydro/{z}/{x}/{y}.png')
+
+  var clark = new L.KML("/thermal/clark.kml",{async:true});
+
+  var standard = new L.KML("/thermal/pStandard.kml",{async:true})
+  var diurnal = new L.KML("/thermal/pStandard.kml",{async:true})
+  var stability = new L.KML("/thermal/pStability.kml",{async:true})
+  var thermal = new L.KML("/thermal/pThermal.kml",{async:true})
+
+  L.control.scale({position:'bottomright'}).addTo(map)
+  osm.on("loaded",function(e){
+    map.fitBounds(e.target.getBounds());
+    });
+
+    standard.on("loaded",function(e){
+      map.fitBounds(e.target.getBounds());
+      });
+  map.addLayer(osm);
+  map.addLayer(clark);
+  map.addLayer(standard);
+
+  var vectors = {
+    "Standard" : standard,
+    "Diurnal Winds" : diurnal,
+    "Non-Neutral Stability" : stability,
+    "Diurnal Winds + Non-Neutral Stability" : thermal
+  };
+  var blank = {};
+
+  // map.addControl(new L.Control.Layers({},vectors));
+  map.addControl(new L.Control.Layers({},vectors));
+
+
+  </script>
+</body>
+</html>

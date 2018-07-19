@@ -12,11 +12,6 @@
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
 
-		<!--Leaflet Scripts  -->
-		<script src="https://weather.firelab.org/leaflet/dist/leaflet.js"></script>
-		<script src="https://weather.firelab.org/leaflet-plugins/layer/vector/KML.js"></script>
-		<script src="https://weather.firelab.org/js_files/jquery.js"></script>
-		<link rel="stylesheet" href="https://weather.firelab.org/leaflet/dist/leaflet.css" />
 
 		<link rel="icon"
 			type="image/png"
@@ -47,6 +42,13 @@
 						<header class="major">
 							<h1>WindNinja Sample Simulation</h1>
 						</header>
+						<p>This simulation models diurnal winds and non-neutral stability for a domain in the
+							Lewis and Clark National Forest.
+							This site was chosen due to its high concentration of RAWS stations.
+							The simulation is initialized from Porphyry Peak (PHYM8),
+							and the simulated winds are compared to two nearby RAWS Stations (NCRM8, TS673).
+							 This simulation is automatic and will update every three hours.
+							 For more information of thermal parameterizations</p>
 						<div class="content">
 							<!-- <p>Observations from Big Southern Butte and Salmon River Canyon</p> -->
 						</div>
@@ -54,29 +56,100 @@
 				</section>
 				<!-- Main -->
 					<div id="main" class="alt">
-
 						<!-- One -->
 							<section id="one">
 								<div class="inner">
-									<div id="map" style="width: 1200px; height: 1000px;"></div>
-									<script type='text/javascript'>
+									<p>Click the Layers Icon in the upper right hand corner of the map to see the other simualtions</p>
+									<iframe style="width:1300px;height:800px;"src="ninja.html"></iframe>
+									<header class="major">
+										<h2>Information</h2>
+									</header>
+									<iframe src="https://weather.firelab.org/thermal/thermalLog.txt"
+									style="background: #FFFFFF;" height="75"  width="600"></iframe>
+									<header class="major">
+										<h3>Legends</h3>
+									</header>
+									<div class="row gtr-50 gtr-uniform">
+										<div class="col-2"><span class="image fit">
+											<p>Standard Simulation</p>
+											<img src="/thermal/poph_point_690m.bmp" alt="" /></span>
+										</div>
+										<div class="col-2"><span class="image fit">
+											<p>Diurnal</p>
+											<img src="/thermal/pDiurnal.bmp" alt="" /></span>
+										</div>
+										<div class="col-2"><span class="image fit">
+											<p>Non-Neutral Stability</p>
+											<img src="/thermal/pStability.bmp" alt="" /></span>
+										</div>
+										<div class="col-2"><span class="image fit">
+											<p>Both</p>
+											<img src="/thermal/pThermal.bmp" alt="" /></span>
+										</div>
+									</div>
+									<header class="major">
+										<h3>Validation</h3>
+									</header>
+									<p>These continuously updating plots compare
+										wind speed and direction data from RAWS stations
+										to the nearest simulation point.</p>
+										<div>
+											<script type="text/javascript">
+						            function showImage(smSrc, lgSrc) {
+						                document.getElementById('largeImg').src = smSrc;
+						                showLargeImagePanel();
+						                unselectAll();
+						                setTimeout(function() {
+						                    document.getElementById('largeImg').src = lgSrc;
+						                }, 1)
+						            }
+						            function showLargeImagePanel() {
+						                document.getElementById('largeImgPanel').style.display = 'block';
+						            }
+						            function unselectAll() {
+						                if(document.selection)
+						                    document.selection.empty();
+						                if(window.getSelection)
+						                    window.getSelection().removeAllRanges();
+						            }
+						        	</script>
+											<style type="text/css">
+													#largeImgPanel {
+															text-align: center;
+															display: none;
+															position: fixed;
+															z-index: 100;
+															top: 0; left: 0; width: 90%; height: 90%;
+															background-color: background-color;
+													}
+											</style>
+											<p>Click on any image thumbnail to enlarge. Click again to hide:</p><br><p></p>
+											<img src="https://weather.firelab.org/thermal/V-TS673.png" style="width:200px;height=200px;cursor:pointer"
+													 onclick="showImage(this.src, 'https://weather.firelab.org/thermal/V-TS673.png');" />
 
-									var map = new L.Map('map', {center: new L.LatLng(46.6670,-111.0), zoom: 8});
-									var osm = new L.TileLayer('http://topofire.dbs.umt.edu/topofire_v2/data/osmUShydro/{z}/{x}/{y}.png')
+											<img src="https://weather.firelab.org/thermal/V-NCRM8.png" style="width:200px;height=200px;cursor:pointer"
+													onclick="showImage(this.src, 'https://weather.firelab.org/thermal/V-NCRM8.png');" />
 
-									// var clark = new L.KML("/thermal/clark.kml",{async:true});
-							    var raws  = new L.KML("/ninja/wrfSim/raws_data/raws.kml",{async:true});
+											<img src="https://weather.firelab.org/thermal/V-PHYM8.png" style="width:200px;height=200px;cursor:pointer"
+												 onclick="showImage(this.src, 'https://weather.firelab.org/thermal/V-PHYM8.png');" />
 
-									L.control.scale({position:'bottomright'}).addTo(map)
-									osm.on("loaded",function(e){
-										map.fitBounds(e.target.getBounds());
-										});
+											<img src="https://weather.firelab.org/thermal/A-TS673.png" style="width:200px;height=200px;cursor:pointer"
+											 onclick="showImage(this.src, 'https://weather.firelab.org/thermal/A-TS673.png');"/>
 
-									map.addLayer(osm);
-									map.addLayer(raws);
+											<img src="https://weather.firelab.org/thermal/A-NCRM8.png" style="width:200px;height=200px;cursor:pointer"
+											 onclick="showImage(this.src, 'https://weather.firelab.org/thermal/A-NCRM8.png');" />
 
-									</script>
+											<img src="https://weather.firelab.org/thermal/A-PHYM8.png" style="width:200px;height=200px;cursor:pointer"
+												onclick="showImage(this.src, 'https://weather.firelab.org/thermal/A-PHYM8.png');" />
 
+											<img src="http://firelab.github.io/windninja/assets/legend.png" style="width:200px;height=200px;cursor:pointer"
+												onclick="showImage(this.src, 'http://firelab.github.io/windninja/assets/legend.png');" />
+
+											<div id="largeImgPanel" onclick="this.style.display='none'">
+													<img id="largeImg"
+															 style="height:100%; margin:0; padding:0;" />
+											</div>
+										</div>
 								</div>
 							</section>
 
