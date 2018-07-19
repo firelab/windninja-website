@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>WindNinja Online Run</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+
+		<!--Leaflet Scripts  -->
+		<script src="https://weather.firelab.org/leaflet/dist/leaflet.js"></script>
+		<script src="https://weather.firelab.org/leaflet-plugins/layer/vector/KML.js"></script>
+		<script src="https://weather.firelab.org/js_files/jquery.js"></script>
+		<link rel="stylesheet" href="https://weather.firelab.org/leaflet/dist/leaflet.css" />
+
+		<link rel="icon"
+			type="image/png"
+			href="../favicon.ico">
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="../index.html" class="logo"><strong>WINDNINJA</strong> <span>FIRELAB</span></a>
+						<nav>
+							<a href="../about.html">About</a>
+							<a href="../help.html">Help</a>
+							<a href="../tutorials/">Tutorials</a>
+							<a href="https://weather.firelab.org/windninja_api/index.html">API</a>
+						</nav>
+					</header>
+
+
+				<section id="banner" class="style3">
+					<div class="inner">
+						<span class="image">
+							<img src="../images/23banner.jpg" alt="" />
+						</span>
+						<header class="major">
+							<h1>WindNinja Sample Simulation</h1>
+						</header>
+						<div class="content">
+							<!-- <p>Observations from Big Southern Butte and Salmon River Canyon</p> -->
+						</div>
+					</div>
+				</section>
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<div id="map" style="width: 1200px; height: 1000px;"></div>
+									<script type='text/javascript'>
+
+									var map = new L.Map('map', {center: new L.LatLng(46.6670,-111.0), zoom: 8});
+									var osm = new L.TileLayer('http://topofire.dbs.umt.edu/topofire_v2/data/osmUShydro/{z}/{x}/{y}.png')
+
+									// var clark = new L.KML("/thermal/clark.kml",{async:true});
+							    var raws  = new L.KML("/ninja/wrfSim/raws_data/raws.kml",{async:true});
+
+									L.control.scale({position:'bottomright'}).addTo(map)
+									osm.on("loaded",function(e){
+										map.fitBounds(e.target.getBounds());
+										});
+
+									map.addLayer(osm);
+									map.addLayer(raws);
+
+									</script>
+
+								</div>
+							</section>
+
+					</div>
+
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<p style="text-align:center;"><img src="https://avatars1.githubusercontent.com/u/3028309?v=3&s=200" alt "firelab"></p>
+							<p style="text-align:center;"><a href="http://firelab.org/">firelab.org</a></p>
+							<ul class="icons">
+							</ul>
+							<ul class="copyright">
+								<li>&copy; RMRS Missoula Fire Sciences Laboratory</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/jquery.scrolly.min.js"></script>
+		<script src="../assets/js/jquery.scrollex.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+
+
+
+	</body>
+</html>
