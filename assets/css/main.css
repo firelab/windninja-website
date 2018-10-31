@@ -3777,7 +3777,8 @@ input, select, textarea {
 		-ms-justify-content: center;
 		justify-content: center;
 		pointer-events: none;
-		background: rgba(36, 41, 67, 0.9);
+		/*background: rgba(36, 41, 67, 0.9);*/
+		background: #3C3C3680; /*Know your hex codes - the actual background color, that #3C3C36 grey, 80 is about 50% in hexland*/
 		box-shadow: none;
 		height: 100%;
 		left: 0;
@@ -3906,6 +3907,7 @@ input, select, textarea {
 
 	body.is-ie #menu {
 		background: rgba(42, 47, 74, 0.975);
+		/*background:#3C3C36;*/
 	}
 
 	body.is-menu-visible #wrapper {
