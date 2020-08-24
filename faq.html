@@ -44,6 +44,7 @@
 					<a href="help.html">Help</a>
 					<a href="tutorials/">Tutorials</a>
 					<a href="mobile/">Mobile</a>
+					<a href="faq.html">FAQ</a>
 					<a href="#menu">Menu</a>
 					<!-- <a href="https://weather.firelab.org/windninja_api/index.html">API</a> -->
 					<!-- <a href="publications/">Publications</a> -->
@@ -99,7 +100,7 @@
 								<div class="inner">
 									<div class="faq_container">
 									   <div class="faq">
-									      <div class="faq_question"><h2>How do I install WindNinja?</h2></div>
+									      <div class="faq_question"><h2>1. How do I install WindNinja?</h2></div>
 									           <div class="faq_answer_container">
 									              <div class="faq_answer">
 																	<b>Windows</b>: Download the installer from
@@ -121,21 +122,13 @@
 
 									<div class="faq_container">
 									  <div class="faq">
-									      <div class="faq_question"><h2>Where can documentation about running WindNinja be found?</h2></div>
+									      <div class="faq_question"><h2>2. Where can documentation about running WindNinja be found?</h2></div>
 									        <div class="faq_answer_container">
 									          <div class="faq_answer">
 															<h4><a href="tutorials/">
 																Tutorials can be found online here.</a></h4>
 																<br>
 									            <p style="font-size:105%;">Much of the available documentation is included in the WindNinja installation.  To find this, first install WindNinja.  Next, go to Start->Programs->WindNinja-x.x.x.  Here you will find links to the included documentation, which includes tutorials, elevation file download instructions, wind vector viewing instructions, and example elevation files.</p>
-									              <br>
-									              <p style="font-size:105%;">
-																	Another place to find WindNinja documentation is on
-																	<a href="http://www.firelab.org/windninja">
-																		WindNinja's distribution web site
-																	</a>
-																</p>
-									              <br>
 									              <br>
 									            </div>
 									          </div>
@@ -144,13 +137,13 @@
 									<div class="faq_container">
 									  <div class="faq">
 									      <div class="faq_question">
-													<h2>What is the difference between WindNinja and WindWizard?</h2>
+													<h2>3. What is the difference between WindNinja and WindWizard?</h2>
 												</div>
 									        <div class="faq_answer_container">
 									          <div class="faq_answer">
 									            <p style="font-size:105%;">
 																<a href="http://www.firelab.org/project/windwizard">WindWizard</a> is no longer available.
-									              There is now an optional conservation of mass and momentum solver in
+									              There is now a conservation of mass and momentum solver in
 									              WindNinja which replaces the functionality of WindWizard.
 									              <br>
 									              <p style="font-size:105%;">The physics in the WindWizard solver were based on
@@ -161,20 +154,15 @@
 									                momentum solver that replaces the functionality of WindWizard. There are now two options for the
 									                solver (the number-crunching part of WindNinja): 1) conservation of mass and 2) conservation
 									                of mass and momentum. The conservation of mass option is the native, fast-running solver used
-									                in previous versions of WindNinja. The conservation of mass and momentum option is a new solver
-									                based on the OpenFOAM toolkit. OpenFOAM is free, open-source software for computational fluid dynamics (
-									                CFD) from <a href="http://openfoam.org">the OpenFOAM Foundation</a>.</p><br>
+									                in the early versions of WindNinja. The conservation of mass and momentum option is a second solver
+									                based on the OpenFOAM toolkit. OpenFOAM is free, open-source software for computational fluid dynamics
+                                                                                        (CFD) from <a href="http://openfoam.org">the OpenFOAM Foundation</a>.</p><br>
 									              <p style="font-size:105%;">The major differences, from a user’s perspective, between the two solvers are:</p>
 									              <br>
-									              <p>&nbsp&nbsp&nbsp&nbsp1) The conservation of mass solver runs much faster than the conservation of mass and momentum solver (less than a minute for conservation of mass compared to about 1 hour for conservation of mass and momentum).</p><br>
-									              <p>&nbsp&nbsp&nbsp&nbsp2) The conservation of mass solver's approximation of the momentum equation is simpler and, at times, less accurate than that of the conservation of mass and momentum solver. This is mainly why the conservation of mass solver runs so much faster than the conservation of mass and momentum.</p><br>
+									              <p>&nbsp&nbsp&nbsp&nbsp1) The conservation of mass solver runs much faster than the conservation of mass and momentum solver (less than a minute for conservation of mass compared to 10s of minutes (depending on simulation specifics) for conservation of mass and momentum).</p><br>
+									              <p>&nbsp&nbsp&nbsp&nbsp2) The conservation of mass solver's approximation of the momentum equation is simpler and, at times, less accurate than that of the conservation of mass and momentum solver. This is the main reason the conservation of mass solver runs so much faster than the conservation of mass and momentum.</p><br>
 									              <p>&nbsp&nbsp&nbsp&nbsp3) The conservation of mass simulations are normally less accurate during stronger winds on the lee sides of ridges and mountains where re-circulation eddies can occur.</p><br>
-									              <p>&nbsp&nbsp&nbsp&nbsp4) The conservation of mass solver incorporates some non-neutral atmospheric stability effects, while the conservation of mass and momentum is only valid under near-neutral stability.</p><br>
-									              <p>&nbsp&nbsp&nbsp&nbsp5) WindNinja has a feature that allows users to enter measured wind information at several locations to drive the flow. WindNinja will produce a wind field that matches the winds as these locations. This feature is not currently available for the conservation of mass and momentum solver.</p><br>
-									              <p>&nbsp&nbsp&nbsp&nbsp6) WindNinja has a feature that automatically fetches and uses coarser U.S. National Weather Service forecast model outputs to drive the flow.</p><br>
-									              <br>
-									              <br>
-
+									              <p>&nbsp&nbsp&nbsp&nbsp4) WindNinja has a feature that allows users to enter measured wind information at several locations to drive the flow. WindNinja will produce a wind field that matches the winds as these locations. This feature is not currently available for the conservation of mass and momentum solver.</p><br>
 									            </div>
 									          </div>
 									  </div>
@@ -182,19 +170,17 @@
 
 									<div class="faq_container">
 									  <div class="faq">
-									      <div class="faq_question"><h2>Is WindNinja faster than WindWizard? How much?</h2></div>
+									      <div class="faq_question"><h2>4. Is WindNinja faster than WindWizard? How much?</h2></div>
 									        <div class="faq_answer_container">
 									          <div class="faq_answer">
 															<a href="http://www.firelab.org/project/windwizard">WindWizard</a>
 															 is no longer available.
-									            There is now an optional conservation of mass and momentum solver in
-									            WindNinja which replaces the functionality of WindWizard.<br>
-									            <p style="font-size:105%;">
-																The conservation of mass solver (the native WindNinja solver)
-																runs much faster than the conservation of mass and momentum solver
-																(less than a minute for conservation of mass compared to about 1 hour
-																for conservation of mass and momentum).</p>
-									            <br>
+									            There is now a conservation of mass and momentum solver in
+									            WindNinja which replaces the functionality of WindWizard. 
+                                                                                    The conservation of mass solver runs much faster than the
+                                                                                    conservation of mass and momentum solver
+                                                                                    (less than a minute for conservation of mass compared to 10s of minutes 
+                                                                                    for conservation of mass and momentum).</p>
 									            <br>
 									            </div>
 									          </div>
@@ -202,11 +188,10 @@
 									</div>
 									<div class="faq_container">
 									  <div class="faq">
-									      <div class="faq_question"><h2>How do I view WindNinja outputs?</h2></div>
+									      <div class="faq_question"><h2>5. How do I view WindNinja outputs?</h2></div>
 									        <div class="faq_answer_container">
 									          <div class="faq_answer">
-									            <p style="font-size:105%;">There are several ways to view WindNinja outputs.  Probably the most convenient is to use Google Earth and WindNinja's KMZ output file (.kmz).  As of version 3.0, WindNinja can generate a GeoPDF output file (.pdf). GeoPDFs can be viewed in any PDF reader, but can also be viewed in GIS programs including the Avenza PDF Maps mobile application. Another way, if you have a FARSITE landscape file (.lcp), is to use FlamMap with WindNinja's fire behavior output files (.asc).  Last, you could use a GIS such as ArcView or ArcMap with WindNinja's shape file output files (.shp, .shx, .dbf).  Instructions for plotting wind vectors using ArcView and ArcMap can be found within the help menu of WindNinja.</p>
-									            <br>
+									            <p style="font-size:105%;">There are several ways to view WindNinja outputs.  Probably the most convenient way is to use Google Earth and WindNinja's KMZ output file (.kmz).  As of version 3.0, WindNinja can generate a GeoPDF output file (.pdf). GeoPDFs can be viewed in any PDF reader, but can also be viewed in GIS programs including the Avenza PDF Maps mobile application. Another way, if you have a FARSITE landscape file (.lcp), is to use FlamMap with WindNinja's fire behavior output files (.asc).  Last, you could use a GIS such as ArcView or ArcMap with WindNinja's shape file output files (.shp, .shx, .dbf).  Instructions for plotting wind vectors using ArcView and ArcMap can be found within the help menu of WindNinja.</p>
 									            <br>
 									            </div>
 									          </div>
@@ -214,7 +199,7 @@
 									</div>
 									<div class="faq_container">
 									  <div class="faq">
-									      <div class="faq_question"><h2>What elevation file formats does WindNinja accept?</h2></div>
+									      <div class="faq_question"><h2>6. What elevation file formats does WindNinja accept?</h2></div>
 									        <div class="faq_answer_container">
 									          <div class="faq_answer">
 									            <p style="font-size:105%;">Starting with WindNinja 2.0.0, several common file formats can be used.  They are:<br>
@@ -223,9 +208,8 @@
 									&bull; GeoTiff (*.tif)<br>
 									&bull; ERDAS IMAGINE (*.img)<br><br>
 
-									WindNinja can now (as of 2.3.x) download dem files for you, and properly project the file.
+									As of version 2.3.x, WindNinja can download DEM files for you in the proper spatial projection.
 									</p>
-									            <br>
 									            <br>
 									            </div>
 									          </div>
@@ -233,13 +217,12 @@
 									</div>
 									<div class="faq_container">
 									  <div class="faq">
-									      <div class="faq_question"><h2>How do I obtain an elevation file?</h2></div>
+									      <div class="faq_question"><h2>7. How do I obtain an elevation file?</h2></div>
 									        <div class="faq_answer_container">
 									          <div class="faq_answer">
 									            <p style="font-size:105%;">There are many different ways to obtain elevation files for WindNinja. WindNinja can now download a file for you with the best-fit UTM projection.
 									<br>
 									If you already have an elevation file, it can be used in WindNinja so long as it meets WindNinja's requirements.  See the FAQ question about elevation file requirements.</p>
-									            <br>
 									            <br>
 									            </div>
 									          </div>
@@ -247,18 +230,16 @@
 
 									  <div class="faq_container">
 									    <div class="faq">
-									        <div class="faq_question"><h2>What happens if I don't have GIS projection information with my elevation file?</h2></div>
+									        <div class="faq_question"><h2>8. What happens if I don't have GIS projection information with my elevation file?</h2></div>
 									          <div class="faq_answer_container">
 									            <div class="faq_answer">
-									              <p style="font-size:105%;"><h3> Pre-2.3.0:</h3>
-
+									              <h3> Pre-2.3.0:</h3>
+                                                                                      <p>
 									Without projection information, you can still use WindNinja but some options will not be available.  Specifically, you won't be able to make Google Earth output files (.kmz).  Also, if you want to do a diurnal simulation, you will have to manually enter a latitude and longitude for your area (with projection information WindNinja can automatically find the latitude and longitude for you).
-
-									<h3> 2.3.0 and after</h3>
+									<h3> 2.3.0 and after:</h3>
 
 									WindNinja <b>requires</b> projection information with your DEM.
 									</p>
-									              <br>
 									              <br>
 									              </div>
 									            </div>
@@ -266,7 +247,7 @@
 									  </div>
 									<div class="faq_container">
 									  <div class="faq">
-									      <div class="faq_question"><h2>What are the requirements for elevation files?</h2></div>
+									      <div class="faq_question"><h2>9. What are the requirements for elevation files?</h2></div>
 									        <div class="faq_answer_container">
 									          <div class="faq_answer">
 									            <p style="font-size:105%;">
@@ -283,7 +264,6 @@
 																 Last, if WindNinja 2.3.0 or newer is used, it must be georeferenced
 																 in a projected coordinate system.</p>
 									            <br>
-									            <br>
 									            </div>
 									          </div>
 									  </div>
@@ -291,13 +271,12 @@
 									</div>
 									<div class="faq_container">
 									  <div class="faq">
-									      <div class="faq_question"><h2>If I use a coarse (say 90m) DEM, can I simulate a larger area?</h2></div>
+									      <div class="faq_question"><h2>10. If I use a coarse DEM can I simulate a larger area?</h2></div>
 									        <div class="faq_answer_container">
 									          <div class="faq_answer">
-									            <p style="font-size:105%;">The DEM resolution is really not so much the issue, it is the computational resolution of the wind simulation.   WindNinja resamples the DEM to build the internal computational resolution, which is the resolution of the actual wind simulation.  This computational resolution is the limiting factor in simulations when it comes to computational time and computational memory (running out of computer RAM).  The choice of computational resolution should be such that the terrain is adequately resolved for the wind simulation, meaning that the scale of terrain that you want to resolve is resolved.  For example, if you want to resolve all terrain features of a certain size, say hills of horizontal size of around 100 meters, then the computational resolution should probably be at least 10 to 30 meters so that there are several cells on the 100 meter hills.  And so the computational resolution choice is probably really a function of the terrain.  "Smoother" terrains with large average distances between hills/ridges could use larger cell sizes than "rougher" terrain.
+									            <p style="font-size:105%;">The DEM resolution is really not so much the issue; the issue is the computational resolution of the wind simulation.   WindNinja resamples the DEM to build the internal computational resolution, which is the resolution of the actual wind simulation.  This computational resolution is the limiting factor in simulations when it comes to computational time and computational memory (running out of computer RAM).  The choice of computational resolution should be such that the terrain is adequately resolved for the wind simulation, meaning that the scale of terrain that you want to resolve is resolved.  For example, if you want to resolve all terrain features of a certain size, say hills of horizontal size of around 100 meters, then the computational resolution should probably be at least 10 to 30 meters so that there are several cells on the 100 meter hills.  And so the computational resolution choice is probably really a function of the terrain.  "Smoother" terrains with large average distances between hills/ridges could use larger cell sizes than "rougher" terrain.
 									<br><br>
 									Through experience, we've found that 100 to 300 meter computational (mesh) resolutions are usually adequate for most terrains.  This can be obtained by choosing "fine" for mesh resolution and keeping the DEM extent to less than 40-50 km on a side.  The user can choose "custom" for resolution and manually enter a computational cell size in meters.  You could play around with a larger DEM (say 100 km by 100 km) and manually set the computational (mesh) resolution.  The limiting factor will be computer RAM, at some point you'll run out.</p>
-									            <br>
 									            <br>
 									            </div>
 									          </div>
@@ -305,11 +284,10 @@
 									</div>
 									  <div class="faq_container">
 									    <div class="faq">
-									        <div class="faq_question"><h2>Have you compared results with different grid resolutions to know if it markedly changes wind behavior?</h2></div>
+									        <div class="faq_question"><h2>11. Have you compared results with different grid resolutions to know if it markedly changes wind behavior?</h2></div>
 									          <div class="faq_answer_container">
 									            <div class="faq_answer">
-									              <p style="font-size:105%;">Indeed we have.<br> <br> For an example and discussion, you could look at the images on pages 30-31 of <a href="http://www.firelab.org/document/forthofer-thesis">Jason Forthofer's master's thesis</a>.  Note that this terrain is fairly gentle though.  The appropriate grid resolution is dependent on the specific terrain and what winds you want to resolve. Probably one of the best things to do is to experiment with different computational (mesh) resolutions for your terrain to see how much difference there is (sensitivity).</p>
-									              <br>
+									              <p style="font-size:105%;">Indeed we have. For an example and discussion, you could look at the images on pages 30-31 of <a href="http://www.firelab.org/document/forthofer-thesis">Jason Forthofer's master's thesis</a>.  Note that this terrain is fairly gentle though.  The appropriate grid resolution is dependent on the specific terrain and what winds you want to resolve. Probably one of the best things to do is to experiment with different computational (mesh) resolutions for your terrain to see how much difference there is (sensitivity).</p>
 									              <br>
 									              </div>
 									            </div>
@@ -317,11 +295,10 @@
 									  </div>
 									    <div class="faq_container">
 									      <div class="faq">
-									          <div class="faq_question"><h2>Is WindNinja accurate along the borders of the modeling domain?</h2></div>
+									          <div class="faq_question"><h2>12. Is WindNinja accurate along the borders of the modeling domain?</h2></div>
 									            <div class="faq_answer_container">
 									              <div class="faq_answer">
 									                <p style="font-size:105%;">As with most numerical models of this type, winds along the border of the modeling domain may have some error.  This is because, in reality, terrain features outside the modeling domain may affect the wind flow inside the domain.  But since these terrain features are not modeled, the simulation results do not reflect them.  There is a simple solution to deal with this problem.  Use an elevation file that is slightly larger than the area you want to model so there is a buffer around your desired area.  We recommend a 10-20% buffer size.</p>
-									                <br>
 									                <br>
 									                </div>
 									              </div>
@@ -329,11 +306,10 @@
 									    </div>
 									      <div class="faq_container">
 									        <div class="faq">
-									            <div class="faq_question"><h2>Are there any issues about using the model at fine scales?</h2></div>
+									            <div class="faq_question"><h2>13. Are there any issues with using the model at fine scales?</h2></div>
 									              <div class="faq_answer_container">
 									                <div class="faq_answer">
-									                  <p style="font-size:105%;"><i>Say I'd like to use it to model the wind over an area of about 100 hectares which has a fairly complex topography - is WindNinja ok to use with (say) 10 m grid DEMs?</i><br>There shouldn't be any issues, although WindNinja hasn't been tested much at this scale.</p>
-									                  <br>
+                                                                                            <p style="font-size:105%;"><i>Say I'd like to use it to model the wind over an area of about 100 hectares which has a fairly complex topography - is WindNinja ok to use with (say) 10 m grid DEMs?</i><br><br>There shouldn't be any issues, although WindNinja hasn't been tested much at this scale.</p>
 									                  <br>
 									                  </div>
 									                </div>
@@ -341,11 +317,10 @@
 									      </div>
 									      <div class="faq_container">
 									        <div class="faq">
-									            <div class="faq_question"><h2>Any insights on how well WindNinja captures flow eddies?</h2></div>
+									            <div class="faq_question"><h2>14. Any insights on how well WindNinja captures eddies in the flow?</h2></div>
 									              <div class="faq_answer_container">
 									                <div class="faq_answer">
-									                  <p style="font-size:105%;">Because of how the conservation of mass solver (the native solver) simulates momentum, it cannot capture eddies (reversed flow) at all.  Instead you will just see very low wind speeds in these areas, but not reversed direction. The conservation of mass and momentum solver (available since version 3.0) will capture eddies in the flow field. We are in the process of evaluating the conservation of mass and momentum solver, including its ability to resolve lee-side eddies, against field observations in complex terrain.</p>
-									                  <br>
+									                  <p style="font-size:105%;">Because of how the conservation of mass solver simulates momentum, it cannot capture eddies (reversed flow) at all.  Instead you will just see very low wind speeds in these areas, but not reversed direction. The conservation of mass and momentum solver (available since version 3.0) will capture eddies in the flow field. We are in the process of evaluating the conservation of mass and momentum solver, including its ability to resolve lee-side eddies, against field observations in complex terrain.</p>
 									                  <br>
 									                  </div>
 									                </div>
@@ -353,35 +328,57 @@
 									      </div>
 									      <div class="faq_container">
 									        <div class="faq">
-									            <div class="faq_question"><h2>How should I cite the model in a publication?</h2></div>
+									            <div class="faq_question"><h2>15. How should I cite the model in a publication?</h2></div>
 									              <div class="faq_answer_container">
 									                <div class="faq_answer">
-									                  <p style="font-size:105%;">The best peer-reviewed reference is:<br>
+                                                                                            <p style="font-size:105%;">The best peer-reviewed reference is:<br><br>
 
-									Forthofer, J.M., Butler, B.W., Wagenbrenner, N.S., 2014. [A comparison of three approaches for simulating fine-scale surface winds in support of wildland fire management. Part I. Model formulation and comparison against measurements] (http://www.fs.fed.us/rm/pubs_other/rmrs_2014_forthofer_j001.pdf). Int. J. Wildland Fire. 23:969-981.
+                                                                                            Forthofer, J.M., Butler, B.W., Wagenbrenner, N.S., 2014. <a href="https://www.researchgate.net/publication/264824386_A_comparison_of_three_approaches_for_simulating_fine-scale_surface_winds_in_support_of_wildland_fire_management_Part_I_Model_formulation_and_comparison_against_measurements">A comparison of three approaches for simulating fine-scale surface winds in support of wildland fire management. Part I. Model formulation and comparison against measurements</a>. Int. J. Wildland Fire. 23:969-981.
 									<br>
+                                                                        <br>
 									<i>Note: In this publication WindNinja is referred to as the "mass-conserving" model.</i></p>
-									                  <br>
+                                                                        </header>
+                                                                        <ul class="actions">
+                                                                                <li><a href="publications/" class="button">View Additional Publications</a></li>
+                                                                        </ul>
 									                  <br>
 									                  </div>
 									                </div>
 									        </div>
 									      </div>
-							</section>
-							<div class="inner">
-										<section id="two" class="spotlights">
-											<section style="background-color:#4CAF50">
-												<div class="content">
-													<div class="inner">
-														<header class="major">
-															<h3>Select Publications and Products</p>
-														</header>
-														<ul class="actions">
-															<li><a href="publications/" class="button">View Additional Publications</a></li>
-														</ul>
-													</div>
-												</div>
-										</section>
+									      <div class="faq_container">
+									        <div class="faq">
+									            <div class="faq_question"><h2>16. Can I use other weather model output to initialize WindNinja? </h2></div>
+									              <div class="faq_answer_container">
+									                <div class="faq_answer">
+                                                                                            <p style="font-size:105%;"><i>WindNinja has built-in support for a number of weather models provided by NCEP, but what if I have output from a different weather model or archived model output from one of the NCEP models?</i><br><br> In addition to the NCEP models that WindNinja can download for you, WindNinja can also handle output from the WRF-ARW model in NetCDF format (these files are often referred to as "wrfout" files). See <a href="https://weather.firelab.org/windninja/tutorials/WindNinja_tutorial4.pdf">Tutorial 4</a> for instructions on how to use wrfout files for initialization. Right now the NCEP model output we download from NOMADS and UCAR and WRF-ARW NetCDF output are the only model output formats that can be used to initialize WindNinja. We'd like to support additional models, but unfortunately, there are many formats that the weather model output is stored in. These formats differ not just in the file format (e.g., NetCDF, GRIB, etc.), but also in they way the time, geographic projection information, and output variables are stored and hanlded. This makes it very difficult to support all possible models, although we do hope to someday implement a method to allow initialization with arbitrary weather model formats.<br> 
+                                                                                <br>
+                                                                                For now, if you want to use an unsupported weather model format for initialization, you could consider converting your model output to the WRF-ARW NetCDF format. Other users have done this successfully. You can see an example converter script <a href="files/convert_CHM-GEM.py">here</a> (provided by <a href="http://chrismarsh.ca/">Chris Marsh</a>) and an example wrfout file <a href="https://weather.firelab.org/ninja/windninja/wrfout_d02_2017-10-09_12_00_00.nc">here</a>. To mimic a WRF-ARW NetCDF output file, you'll need the following:<br>
+                                                                                            <ol>
+                                                                                                <li>There needs to be a global attribute "TITLE" that has "WRF" in it. For example, TITLE = " OUTPUT FROM WRF V3.2 MODEL" is what is in the example wrfout file. WindNinja only searches for the text "WRF" in the TITLE attribute though.</li><br>
+                                                                                                <li>There needs to be a time variable. In the example wrfout file it is the first variable defined as: char Times(Time, DateStrLen). There also needs to be a dimension "Time" and "DateStrLen". In the example wrfout file, it looks like this:<br><br>
+                                                                                            <ul style="list-style-type:none;">
+                                                                                                  <li>dimensions:</li>
+                                                                                                  <li>Time = UNLIMITED ; // (24 currently)</li>
+                                                                                                  <li>DateStrLen = 19 ;</li>
+                                                                                            </ul>  
+                                                                                            The datetime string for the Times variable needs to be in the exact format as the Times variable in the example wrfout file.</li><br>
+                                                                                                <li>There needs to be a global attribute "MAP_PROJ" which defines the projection used for the WRF simulation. In the example wrfout file MAP_PROJ = 1 (which corresponds to LCC; 2 is Polar Stereographic, and 3 is Mercator). It's critical that you know what projection your simulation is in, otherwise the WindNinja initialization will not be correct (the predicted winds will not be located correctly in space).</li><br>
+                                                                                           <li>The required variable names are U10 (u-component of the wind at 10 m), V10 (v-component of the wind at 10 m), T2 (Temperature at 2 m), and QCLOUD (Fraction of cloud cover).</li>
+                                                                                            </ol>
+                                                                                            </p>
+									                  <br>
+									                  </div>
+									                </div>
+									        </div>
+									      </div>
+                                                                        <hr>
+                                                                        <h2>Still have questions?</h2>
+                                                                        </header>
+                                                                        <p>Let us know! Send an email to the WindNinja support team.</p>
+                                                                        <ul class="actions">
+                                                                                <li><a href="mailto:wind.ninja.support@gmail.com" class="button">Contact WindNinja Support</a></li>
+                                                                        </ul>
 									</div>
 
 					</div>

@@ -44,6 +44,7 @@
 					<a href="help.html">Help</a>
 					<a href="tutorials/">Tutorials</a>
 					<a href="mobile/">Mobile</a>
+					<a href="faq.html">FAQ</a>
 					<a href="#menu">Menu</a>
 					<!-- <a href="https://weather.firelab.org/windninja_api/index.html">API</a> -->
 					<!-- <a href="publications/">Publications</a> -->
@@ -98,19 +99,16 @@
 						<!-- One -->
 							<section id="one">
 								<div class="inner">
-									<p>Wind is one of the most influential environmental factors affecting wildland fire behavior. The complex terrain of fire-prone landscapes causes local changes in wind speed and direction that are not predicted well by standard weather models or expert judgment. WindNinja was developed to help fire managers predict these winds.</p>
-									<a href="faq.html">Frequently Asked Questions</a>
-									<p><br></p>
+									<p>Wind is one of the most important environmental factors affecting wildland fire behavior. Complex terrain in fire-prone landscapes induces local changes in the near-surface wind that are not predicted well by either operational weather models or expert judgment. WindNinja was developed to help fire managers predict these winds.</p>
+                                                                        <hr>
 									<div class="faq_container">
 									   <div class="faq">
 									      <div class="faq_question"><h2>Purpose</h2></div>
 									           <div class="faq_answer_container">
 									              <div class="faq_answer">
-										              <p>WindNinja is a computer program that computes spatially varying wind fields for wildland fire and other applications requiring high resolution wind prediction in complex terrain. It was developed to be used by emergency responders within their typical operational constraints of fast simulation times (seconds), low CPU requirements (single processor laptops), and low technical expertise.</p>
+										              <p>WindNinja is a computer program that computes spatially-varying wind fields for wildland fire and other applications requiring high-resolution wind predictions in complex terrain. It was developed to be used by emergency responders within their typical operational constraints of fast simulation times (seconds), low CPU requirements (single processor laptops), and low technical expertise.</p>
 																	<!-- <br> -->
-										              <p>See Also:</p>
-										              <a href="howdoes/who_uses.html">Who Uses WindNinja?</a>
-										              <br>
+                                                                                              <p>See Also: <a href="howdoes/who_uses.html"> Who Uses WindNinja?</a></p>
 										              <br>
 									              </div>
 									            </div>
@@ -121,18 +119,14 @@
 									      <div class="faq_question"><h2>Running WindNinja</h2></div>
 									           <div class="faq_answer_container">
 									              <div class="faq_answer">
-									              <p>WindNinja can be run in three different modes.</p>
+									              <p>WindNinja can be initialized in three ways.</p>
 									              <ol>
-									                <li>User specified average wind speed and direction. (Domain Average)</li>
-									                <li>User specified data from a weather station. (Point Initialization)</li>
-									                <li>Coarse scale weather models from NOAA. (Weather Model Initialization)</li>
+									                <li>User-specified average wind speed and direction. ("Domain Average Initialization")</li>
+									                <li>Data from one or more weather stations. ("Point Initialization")</li>
+									                <li>Coarse-scale weather models from NOAA. ("Weather Model Initialization")</li>
 									              </ol>
-									              <p>WindNinja also requires elevation data, date and time, and dominant vegetation type. WindNinja can obtain much of this data from internet sources</p>
-									              <p>See Also:</p>
-									              <!-- <p><a href="http://firelab.github.io/windninja/whois/">Who Uses WindNinja?</a></p> -->
-									              <p><a href="howdoes/">How Does WindNinja Work?</a></p>
-									              <p><a href="tutorials/">WindNinja Tutorials</a></p>
-									              <br>
+									              <p>WindNinja also requires elevation data (in the form of a digital elevation model) and specification of the dominant vegetation type. WindNinja can obtain this data from internet sources.</p>
+									              <p>See Also:<a href="howdoes/"> How Does WindNinja Work?</a> and <a href="tutorials/">WindNinja Tutorials</a></p>
 									              <br>
 									              </div>
 									            </div>
@@ -143,16 +137,15 @@
 									      <div class="faq_question"><h2>Features</h2></div>
 									           <div class="faq_answer_container">
 									              <div class="faq_answer">
-									              <p>WindNinja has several optional features.</p>
+									              <p>WindNinja has several unique features.</p>
 									              <ol>
-									                <li>1. Diurnal Slope Flow Model</li>
-									                <li>2. Non-neutral Atmospheric Stability Model</li>
-									                <li>3. OpenFOAM conservation of Mass and Momentum Solver (only available with Domain Average Initialization)</li>
+									                <li>Diurnal slope flow parameterization</li>
+									                <li>Non-neutral atmospheric stability parameterization</li>
+									                <li>Ability to download digital elevation model data from US SRTM, world SRTM, and GMTED sources</li>
+									                <li>Ability to download Landscape files for gridded vegetation</li>
+									                <li>Ability to download operational weather model data from NOMADS and UCAR</li>
+									                <li>Ability to download weather station data from MesoWest/SynopticLabs</li>
 									              </ol>
-									              <p>See Also:</p>
-									              <p><a href="howdoes/">How Does WindNinja Work?</a></p>
-									              <p><a href="https://github.com/firelab/windninja/wiki/">Developer Documentation</a></p>
-									              <br>
 									              <br>
 									              </div>
 									            </div>
@@ -163,16 +156,14 @@
 									      <div class="faq_question"><h2>Outputs</h2></div>
 									           <div class="faq_answer_container">
 									              <div class="faq_answer">
-									              <p>Outputs of the model can be viewed by a variety of programs</p>
+									              <p>WindNinja can produce the following outputs:</p>
 									              <ol>
-									                <li>1. Google Earth (.kmz)</li>
-									                <li>2. ASCII Grids of wind speed and direction for <a href="https://www.firelab.org/project/farsite">FARSITE</a> and <a href="https://www.firelab.org/project/flammap">FlamMap</a></li>
-									                <li>3. GIS shapefile for displaying wind vectors in GIS programs</li>
+									                <li>Google Earth (.kmz)</li>
+									                <li>ASCII grids of wind speed and direction for <a href="https://www.firelab.org/project/farsite">FARSITE</a> and <a href="https://www.firelab.org/project/flammap">FlamMap</a></li>
+									                <li>GIS shapefile for displaying wind vectors in GIS programs</li>
+									                <li>GeoPDFs for viewing, for example, in Avenza PDF Maps</li>
+									                <li>VTK output, which is a standard 3-D format that can be viewed in programs such as ParaView and MeshLab</li>
 									              </ol>
-									              <p>See Also:</p>
-									              <p><a href="howdoes/">How Does WindNinja Work?</a></p>
-									              <p><a href="tutorials/">WindNinja Tutorials on displaying outputs</a></p>
-									              <br
 									              <br>
 									              </div>
 									            </div>
@@ -183,18 +174,14 @@
 									      <div class="faq_question"><h2>Specifications</h2></div>
 									           <div class="faq_answer_container">
 									              <div class="faq_answer">
-									              <p>WindNinja can run on Linux and 32/64-bit Windows (XP and higher) <a href="https://www.firelab.org/document/windninja-software">(Download Here)</a></p>
-									              <p>Running WindNinja on Linux requires <a href="building/">Building from source</a></p>
-									              <p><a href="building/">WindNinja can also be built from source on Windows</a></p>
+                                                                                      <p>WindNinja runs on Linux and Windows (XP and higher).</p>
+                                                                                      <p><b>Windows: </b> <a href="https://www.firelab.org/document/windninja-software">Download the Windows installer here.</a></p>
+                                                                                      <p><b>Linux: </b> <a href="building/">Get the instructions for building from source.</a></p>
 									              <p>Hardware Requirements:</p>
 									              <ul>
 									                <li>Minimum: 4 GB RAM, 2.0 GHz processing speed</li>
 									                <li>Reccomended: 8 GB RAM, 2.4 GHz processing speed</li>
 									              </ul>
-									              <p>See Also:</p>
-									              <p><a href="build/">Building WindNinja from Source</a></p>
-									              <p><a href="https://github.com/firelab/windninja">WindNinja on GitHub</a></p>
-									              <br>
 									              <br>
 									              </div>
 									            </div>
@@ -205,11 +192,7 @@
 									      <div class="faq_question"><h2>WindNinja-Mobile</h2></div>
 									           <div class="faq_answer_container">
 									              <div class="faq_answer">
-									              <p>WindNinja is available as a mobile app. From the app, users can set up and run WindNinja on a remote server, and then download and view the results.</p>
-									              <p>See Also:</p>
-									              <p><a href="mobile/">WindNinja-Mobile</a></p>
-									              <p><a href="https://github.com/firelab/windninja-mobile  ">WindNinja-Mobile on GitHub</a></p>
-									              <br>
+									              <p>WindNinja is also available as a <a href="https://weather.firelab.org/windninja/mobile/">mobile app</a>. From the app, users can set up and run WindNinja simulations on a remote server and then download and view the results on a mobile device.</p>
 									              <br>
 									              </div>
 									            </div>
@@ -217,13 +200,13 @@
 									        </div>
 									<div class="faq_container">
 									   <div class="faq">
-									      <div class="faq_question"><h2>Incident Support</h2>
+                                                                               <div class="faq_question"><h2>Incident Support</h2></div>
 									           <div class="faq_answer_container">
-									              <div class="faq_answer"><hr />
-									              <p><a href="faq.html">See FAQ</a></p>
-									              <p><a href="https://github.com/firelab/windninja/blob/master/NEWS.md">See the Change Log for release notes</a></p>
-									              <p><a href="mailto:wind.ninja.support@gmail.com">Contact the WindNinja Support Team</a></p>
-									              <br>
+									              <div class="faq_answer">
+                                                                                      <p>Need help on an incident? Let us know by sending an email to the WindNinja support team.</p>
+                                                                                      <ul class="actions">
+                                                                                        <li><a href="mailto:wind.ninja.support@gmail.com" class="button">Contact WindNinja Support</a></li>
+                                                                                      </ul>
 									              <br>
 									              </div>
 									            </div>

@@ -25,10 +25,11 @@
 				<header id="header" class="alt style2">
 					<a href="../index.html" class="logo"><strong>WINDNINJA</strong> <span>FIRELAB</span></a>
 					<nav>
-						<a href="../mobile/">Mobile</a>
 						<a href="../about.html">About</a>
 						<a href="../help.html">Help</a>
 						<a href="../tutorials/">Tutorials</a>
+						<a href="../mobile/">Mobile</a>
+                                                <a href="../faq.html">FAQ</a>
 						<!-- <a href="https://weather.firelab.org/windninja_api/index.html">API</a> -->
 						<a href="#menu">Menu</a>
 					</nav>
@@ -48,7 +49,7 @@
 							<li><a href="../building/">Building from Source</a></li>
 							<li><a href="../contributors/">Contributors</a></li>
 							<li><a href="../mobile/">WindNinja Mobile</a></li>
-							<li><a href="../usage/">Usage Map</a></li>
+							<li><a href="../usage/">Usage Statistics</a></li>
 							<li><a href="../who_uses/">Who Uses WindNinja?</a></li>
 						</ul>
 						<ul class="actions stacked">
@@ -108,12 +109,10 @@
 											<h2>Using the App</h2>
 										</header>
 										<ol>
-										  <li>Swoop out an area of interest on the map (&lt; 50 x 50 km).</li>
+										  <li>Select an area of interest on the map (&lt; 50 x 50 km).</li>
 										  <li>Enter a run name.</li>
-										  <li>Choose a forecast model.</li>
 										  <li>Choose the forecast duration.</li>
-										  <li>Select the appropriate vegetation option for your area.</li>
-										  <li>Choose notification options.</li>
+										  <li>Choose how you want to be notified when simulation is done.</li>
 										  <li>Click submit. You’re done!</li>
 										  <li>When your high-resolution output is ready, click to download and view the output on the map.</li>
 										</ol>
@@ -123,8 +122,8 @@
 										</header>
 										<div class="box alt">
 											<div class="row gtr-50 gtr-uniform">
-												<div class="col-4"><span class="image fit"><img src="../images/mobile/mobi1.png" alt="" /></span></div>
-												<div class="col-4"><span class="image fit"><img src="../images/mobile/mobi2.png" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="../images/mobile/mobile_screenshot_v2a.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="../images/mobile/mobile_screenshot_v2b.jpg" alt="" /></span></div>
 											</div>
 										</div>
 
@@ -186,10 +185,11 @@
 										not have convenient access to desktop or laptop computers. WindNinja Mobile uses
 										the following settings:</p>
 									<ul>
-									  <li>Weather model initialization with HRRR (short-term) or NAM (long-term) forecasts</li>
+									  <li>Weather model initialization with the HRRR forecast</li>
 									  <li>Domain is limited to 50 x 50 km and must be in CONUS or AK</li>
 									  <li>A “fine” mesh resolution</li>
 									  <li>Output wind height is 20 ft above the vegetation</li>
+									  <li>The momentum solver is used</li>
 									  <li>The diurnal slope wind option is turned on</li>
 									</ul>
 									<p><a href="../howdoes/">
@@ -203,13 +203,15 @@
 											<div class="col-6">
 												<h3>Simulation Locations in the Last Year</h3>
 												<span class="image fit">
-													<img src="http://windninja.wfmrda.org/ninjadata/mobile_usage_map.png" alt="" />
+                                                                                                    <!--<img src="http://windninja2.wfmrda.org/ninjadata/mobile_usage_map.png" alt="" />-->
+													<img src="mobile_usage_map.png" alt="" />
 												</span>
 											</div>
 											<div class="col-6">
 												<h3>Recent Simulation Locations</h3>
 												<span class="image fit">
-													<img src="http://windninja.wfmrda.org/ninjadata/mobile_usage_map_recent.png" alt="" />
+                                                                                                    <!--	<img src="http://windninja2.wfmrda.org/ninjadata/mobile_usage_map_recent.png" alt="" /> -->
+													<img src="mobile_usage_map_recent.png" alt="" />
 												</span>
 											</div>
 										</div>
@@ -220,7 +222,8 @@
 											<div class="col-12">
 											<h3>Daily Simulations</h3>
 											<span class="image fit">
-												<img src="http://windninja.wfmrda.org/ninjadata/mobile_simulations.png" alt="mobile_simulations" />
+                                                                                            <!--	<img src="http://windninja2.wfmrda.org/ninjadata/mobile_simulations.png" alt="mobile_simulations" /> -->
+													<img src="mobile_simulations.png" alt="" />
 											</span>
 											</div>
 										</div>
@@ -231,7 +234,8 @@
 											<div class="col-6">
 											<h3>Registered Users</h3>
 											<span class="image fit">
-												<img src="http://windninja.wfmrda.org/ninjadata/mobile_registrations.png" alt="mobile_reg" />
+                                                                                            <!--	<img src="http://windninja2.wfmrda.org/ninjadata/mobile_registrations.png" alt="mobile_reg" /> -->
+													<img src="mobile_registrations.png" alt="" />
 											</span>
 											</div>
 										</div>

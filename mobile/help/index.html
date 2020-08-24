@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windninja Mobile Documentation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 100px 50px 100px 50px;
+            text-align: left;
+            font-family: sans-serif;
+        }
+
+        .wrapper {
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #1f1f1f;
+        }
+
+        h2 {
+            color: #008EFF;
+        }
+
+        h3 {
+            color: #2f2f2f;
+        }
+
+        h4 {
+            color: #2f2f2f;
+        }
+
+        p {
+            line-height: 1.2;
+        }
+
+        a {
+            color: #008EFF;
+        }
+
+        hr {
+            margin: 50px 0 50px 0;
+            border: 1px solid #f2f2f2;;
+        }
+
+        li {
+            margin-top: 10px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .caption {
+            font-size: 0.75em;
+            color: gray;
+            font-style: italic;
+        }
+
+        mark {
+            font-style: italic;
+        }
+
+        .screenshot {
+            border: 2px solid #f2f2f2;
+        }
+        
+        .top-btn {
+            position: fixed;
+            bottom: 32px;
+            right: 16px;
+            width: 56px;
+            height: 56px;
+            border-radius: 100%;
+            border: none;
+            box-shadow: 0px 3px 6px rgba(0,0,0,0.25);
+            background: #008EFF;
+            color: #ffffff;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+    </style>
+    </style>
+</head>
+
+<body>
+    <a href="#top"><button class="top-btn"><img src="img/arrow-up.svg" width="24" height="24"/></button></a>
+    <div class="wrapper" id="welcome">
+        <img src="img/wn-logo.png" width="100" height="100" alt="WindNinja Logo" />
+        <h1>WindNinja Mobile Documentation</h1>
+        <!--Welcome Section-->
+        <section id="welcome">
+            <h2>Welcome to the WindNinja Mobile User Manual!</h2>
+            <p>Thanks for downloading WindNinja Mobile! Whether you’re a novice or advanced user, this documentation should cover almost everything you need to know about the app.</p>
+            <p>Getting started with WindNinja Mobile is easy and it won’t take long to learn the basics, but if you need any help or just want to find out more about a particular feature, then these guides are for you!</p>
+            <p>On this site you’ll find a collection of our latest documentation, covering the most recently added features in WindNinja Mobile, as well as, links to other resources, which you might find helpful if you’re just getting started.</p>
+            <p>If you have further questions or need additional support please <a href="mailto:wind.ninja.support@gmail.com?subject=WindNinja Mobile Help">contact us</a>.</p>
+            <!--Dropdown Navigation-->
+            <h3>Jump to Section</h3>
+            <ul>
+                <li><a href="#getting-started">Getting Started</a></li>
+                <li><a href="#notifications">Notifications</a></li>
+                <li><a href="#map-controls">Map &amp; UI Controls</a></li>
+                <li><a href="#map-layers">Map Layers</a></li>
+               <li><a href="#simulation-basics">Simulation Basics</a></li>
+            </ul>
+
+        </section>
+        <hr>
+        <!--Getting Started Section-->
+        <section id="getting-started">
+            <h2>Getting Started</h2>
+            <p>To get started with WindNinja Mobile, please refer to this guide/tour for downloading, registering and using the application.</p>
+            <h3>Downloading WindNinja Mobile</h3>
+            <p>If you haven’t done so already, you can download WindNinja Mobile through either the <a href="" target="_blank">Apple App Store</a> for iOS devices or the <a href="" target="_blank">Google Play Store</a> for Android devices.</p>
+            <!--Registration-->
+            <h3>Registration</h3>
+            <p>WindNinja Mobile is free to download and use, but it requires you to register an account before you can start creating and submitting new simulations. Registration requires you to enter your name and email address. <span class="bold">Registration can be completed inside the mobile application.</span></p>
+            <p>You will be prompted to register the first time you open the application. However, if you chose to skip registration initially, you can access the registration screen through the Settings menu. Once you have submitted your registration, <span class="bold">you will receive an email to confirm your account.</span> Once you have completed this, you will be able to create new simulations.</p>
+            <img class="screenshot" src="img/account-registration.png" width="300" alt="Account Registration Screen" />
+            <p class="caption">Account Registration screen.</p>
+            <!--Support-->
+            <h3>Contacting Support</h3>
+            <p>Need further help getting started with WindNinja Mobile or want to learn more? Please visit the WindNinja <a href="https://weather.firelab.org/windninja/" target="_blank">website</a> or <a href="mailto:wind.ninja.support@gmail.com?subject=WindNinja Mobile Help">contact us</a> directly.</p>
+            <p>We hope you enjoy using WindNinja Mobile!</p>
+            <!--Other Links-->
+            <h3>Other Links</h3>
+            <ul>
+                <li><a href="https://weather.firelab.org/windninja/" target="_blank">WindNinja</a></li>
+                <li><a href="https://weather.firelab.org/windninja/help.html/" target="_blank">WindNinja Help</a></li>
+                <li><a href="https://www.firelab.org/project/windninja" target="_blank">Firelab - WindNinja</a></li>
+                <li><a href="https://www.usda.gov/privacy-policy" target="_blank">USDA Privacy Policy</a></li>
+                <li><a href="https://technosylva.com" target="_blank">Technosylva Inc.</a></li>
+            </ul>
+        </section>
+        <hr>
+        <!--Notification Section-->
+        <section id="notifications">
+            <h2>Notifications</h2>
+            <p>WindNinja has been set up to allow you to receive either/both SMS and Email notifications once your simulation is processed and ready for viewing.</p>
+            <h3>Setting Up Notifications</h3>
+            <p>Located in the settings menu, there is a “User Info” section where you can enter the email and phone number that you would like notifications sent to. To receive SMS notifications, it is also required that you select your service provider. Once you have entered this information, tap save to confirm.</p>
+            <img class="screenshot" src="img/user-info-settings.png" width="300" alt="Settings screen and User Info Section" />
+            <p class="caption">Settings screen and User Info section.</p>
+            <!--Turning Off Notifications-->
+            <h3>Turning on Notifications</h3>
+            <p>When you create a new simulation, you will have the option to turn on notifications for that simulation. At the bottom of the simulation attributes panel, there is a section where you can toggle on/off notifications for email and SMS. They are turned off by default. </p>
+            <img class="screenshot" src="img/turn-notifications-on-sim-panel.png" width="300" alt="Simulation attributes panel that contains the notification controls for that simulation." />
+            <p class="caption">Simulation attributes panel that contains the notification controls for that simulation.</p>
+            <p><mark>Please Note: Turning on notifications is controlled on a per simulation basis.</mark></p>
+        </section>
+        <hr>
+        <!--Map Controls Section-->
+        <section id="map-controls">
+            <h2>Map Controls</h2>
+            <p>WindNinja Mobile allows you to generate and view high definition wind model predictions in a 3D mapping environment. The mapping environment follows traditional map controls to allow you too quickly and easily become familiar with navigating around the map and adjusting your perspective.</p>
+            <!--UI Controls-->
+            <h3>User Interface Controls</h3>
+            <p>WindNinja utilizes industry standard controls to help you navigate the map quickly.</p>
+            <!--Search Bar-->
+            <h4>Search Bar</h4>
+            <p>The search bar is located at the top of the screen. It can be used to search for a specific location to help you narrow down your area of interest quicker. When you are creating or viewing a simulation the search bar is no longer available. While creating a simulation, the search bar switches to show you the size of the simulation domain. While viewing a simulation, the search bar is hidden to give you more screen real estate to view the simulation.</p>
+            <img class="screenshot" src="img/search-bar.png" width="300" alt="Search bar that is located at the top of the map." />
+            <p class="caption">Search bar that is located at the top of the map.</p>
+            <!--Compass-->
+            <h4>Compass</h4>
+            <p>WindNinja includes a compass graphic, which appears in the top right corner of the map. When tapped, the compass animates the map back to a position with a bearing and tilt of zero (the default orientation). This returns the map to an over-the-top view, similar to that of traditional 2D mapping environments.</p>
+            <img class="screenshot" src="img/compass.png" width="300" alt="Compass icon that appears in the top right corner of the map." />
+            <p class="caption">Compass icon that appears in the top right corner of the map.</p>
+            <!--MY Location-->
+            <h4>My Location Button</h4>
+            <p>The My Location Button is located in the bottom tab bar on the right-hand side. When tapped, this will zoom the map to your current location using your devices GPS.</p>
+            <img class="screenshot" src="img/my-location.png" width="300" alt="My Location icon that appears in the bottom tool bar." />
+            <p class="caption">My Location icon that appears in the bottom tool bar.</p>
+            <h3>Map Gestures</h3>
+            <p>Similar to the UI Controls, WindNinja utilizes standard map gestures to make navigating and controlling the map easier.</p>
+            <!--Zoom Gestures-->
+            <h4>Zoom Gestures</h4>
+            <p>The map responds to a variety of gestures that can change the zoom level of the camera:</p>
+            <ul>
+                <li>Double tap to increase the zoom level by 1 (zoom in). This will zoom in to the location you tapped.</li>
+                <li>Two fingers tap to decrease the zoom level by 1 (zoom out).</li>
+                <li>Two finger pinch/stretch</li>
+            </ul>
+            <img class="screenshot" src="gifs/zoom-gestures.gif" width="300" alt="Pinch/stretch to zoom in and out example. (Animated GIF)" />
+            <p class="caption">Pinch/stretch to zoom in and out example. (Animated GIF)</p>
+            <!--Scroll Gestures-->
+            <h4>Scroll (pan) Gestures</h4>
+            <p>You can scroll (pan) around the map by dragging the map with one finger. </p>
+            <!--tilt Gestures-->
+            <h4>Tilt Gestures</h4>
+            <p>You can tilt the map (3D View) by placing two fingers on the screen and moving them down or up together to increase or decrease the tilt angle respectively.</p>
+            <img class="screenshot" src="gifs/tilt-gestures.gif" width="300" alt="Tilt gesture example. (Animated GIF)" />
+            <p class="caption">Tilt gesture example. (Animated GIF)</p>
+            <!--Rotate Gestures-->
+            <h4>Rotate Gestures</h4>
+            <p>You can rotate the map by placing two fingers on the screen and applying a rotate/twisting motion. </p>
+        </section>
+        <hr>
+        <!--Map Layers Section-->
+        <section id="map-layers">
+            <h2>Map Layers</h2>
+            <p>WindNinja provides a variety of base maps, as well as, reference layers that you can activate on the map. You can also add your own locally stored base maps, in the form of TPK’s, for offline and disconnected use in the field.</p>
+            <p>To access the base maps and reference layers, tap the map layers icon located in the bottom tool bar.</p>
+            <img class="screenshot" src="img/map-layers-icon.png" width="300" alt="Map layers icon found in the bottom tool bar" />
+            <p class="caption">Map layers icon found in the bottom tool bar.</p>
+            <!--Base Maps-->
+            <h3>Base Maps</h3>
+            <p>By default, WindNinja has included some standard base maps, such as Imagery, Terrain and World Topographic. You can also add your own base map layers in the form of a TPK file for offline and disconnected use or if you have base maps that include additional information (such as labels or fire perimeters).</p>
+            <h4>Selecting a Base Map</h4>
+            <ol>
+                <li>Open the Map Layers panel by tapping the layers icon located in the bottom tool bar.</li>
+                <li>Select the base map by tapping on the preview image in the base maps section of the Map Layers panel.</li>
+            </ol>
+            <img class="screenshot" src="img/layers-panel.jpeg" width="300" alt="Layers panel that contains the available Base Maps." />
+            <p class="caption">Layers panel that contains the available Base Maps.</p>
+            <p>Your currently selected/active base map will be highlighted in blue.</p>
+            <p>The base maps section is scrollable to accommodate multiple base maps and added TPK files.</p>
+            <!--Adding Base MAps (TPK) Android-->
+            <h4>Adding a Base Map (TPK) on Android Devices</h4>
+            <ol>
+                <li>Save or transfer the TPK file to your device’s internal storage.</li>
+                <li>Open the Map Layers panel.</li>
+                <li>Tap the “Add Folder” icon located in the top right of the Map Layers panel.</li>
+                <li>Use the file browser to navigate to the location of the locally stored base map (TPK) file you would like to add.</li>
+                <li>Select the file.</li>
+                <li>Once selected, the base map (TPK) file will automatically be added to WindNinja and will appear in the base maps section of the Map Layers panel.</li>
+            </ol>
+            <p><mark>Please Note: We suggest saving the TPK file to your device's Downloads folder, as this allows you to find the TPK file easier and quicker. It also allows for you to easily add and remove the TPK files on your device.</mark></p>
+            <!--Adding Base MAps (TPK) iOS-->
+            <h4>Adding a Base Map (TPK) on iOS Devices</h4>
+            <ol>
+                <li>Download the base map (TPK) file to your desktop or laptop computer.</li>
+                <li>Connect your iOS device to your laptop or desktop computer using the device’s USB cable.</li>
+                <li>Open iTunes on your desktop or laptop computer.</li>
+                <li>Click on the “Phone” icon located in the top toolbar of iTunes to view your device’s information.</li>
+                <li>Select the “File Sharing” option in the left sidebar of iTunes. </li>
+                <li>Select WindNinja Mobile from the applications list.</li>
+                <li>Click the “Add…” button located at the bottom right of the WindNinja Mobile Documents panel.</li>
+                <li>Browse to the location of the saved base map (TPK) file you want to add.</li>
+                <li>Select the file.</li>
+                <li>The selected file will now appear in the WindNinja Mobile Documents list in iTunes.</li>
+                <li>Properly disconnect your device from your desktop or laptop computer.</li>
+                <li>In the WindNinja Mobile application open the Map Layers panel.</li>
+                <li>Tap the “Add Folder” icon located in the top right of the Map Layers panel.</li>
+                <li>The file browser will automatically open to the WindNinja Mobile application folder where the added base map (TPK) file was added by iTunes.</li>
+                <li>Select the file.</li>
+                <li>Once selected, the base map (TPK) file will automatically be added to WindNinja and will appear in the base maps section of the Map Layers panel.</li>
+            </ol>
+            <p><mark>Please Note: It is possible to directly add the TPK file to your iOS device without connecting to iTunes, however, due to the file browsing limitations of iOS, we have found this to be less of an easy process and often results in it being harder to locate the saved TPK file correctly.</mark></p>
+            <h4>Removing an Added Base Map (TPK)</h4>
+            <ol>
+                <li>Tap the “Delete” icon that appears in the top right of the preview image of the added base map (TPK).</li>
+            </ol>
+            <img class="screenshot" src="img/delete-base-map.png" width="300" alt="Delete icon that appears on a TPK Base Map." />
+            <p class="caption">Delete icon that appears on a TPK Base Map.</p>
+            <!--Reference Layers-->
+            <h3>Reference Layers</h3>
+            <p>WindNinja includes a variety of reference layers that allow you to view additional information in relation to the wind simulation on the map. There is also an offline map reference layer which will allow you to view the map while disconnected in the field. </p>
+            <img class="screenshot" src="img/layers-panel.jpeg" width="300" alt="Layers Panel that contains the available Reference Layers." />
+            <p class="caption">Layers Panel that contains the available Reference Layers.</p>
+            <p>The reference layers included in WindNinja Mobile are:</p>
+            <ul>
+                <li>Offline Map</li>
+                <li>GeoMac</li>
+                <li>MODIS</li>
+                <li>VIIRS</li>
+                <li>Vegetation</li>
+            </ul>
+        </section>
+        <hr>
+        <!--Simulation Basics Section-->
+        <section id="simulation-basics">
+            <h2>Simulation Basics</h2>
+            <p>WindNinja allows you to create and view high resolution wind model simulations for an area of interest up to 70 square miles. You also have the ability to share and import simulations so with other WindNinja users through a unique identifier that is generated for each simulation.</p>
+            <!--Creating Simulation-->
+            <h3>Creating a Simulation</h3>
+            <ol>
+                <li>Navigate (pinch/zoom/pan/search) to an area of interest on the map.</li>
+                <li>On the map screen, tap the blue circle with the pen icon located in the bottom right corner.</li>
+                <li>A rectangle green rectangle will appear on the map with circular vertices one each corner. This rectangle identifies the area that will be simulated. The search bar will transform into a label that identifies the size of the current simulation area. <span class="bold">You can simulate an area with a maximum size of 70 square miles.</span></li>
+                <ul>
+                    <li>To adjust the location of the simulation area, tap and hold on the plus icon in the middle of the rectangle until it turns blue. Once the rectangle has turned blue, you can drag the rectangle around on the map to reposition the simulation area.</li>
+                    <li>To adjust the size of the simulation area, tap and hold on one of the circular vertices until the rectangle turns blue. Once the rectangle as turned blue, you can drag the corner of the rectangle to resize the simulation area.</li>
+                    <li>A green box indicates that the simulation area is below the maximum allowed size of 70 square miles, while a red rectangle indicates that the simulation area is too large to simulate.</li>
+                </ul>
+                <img class="screenshot" src="gifs/create-new-sim.gif" width="300" alt="Selecting and editing an area of interest for a new simulation (Animated GIF)." />
+                <p class="caption">Selecting and editing an area of interest for a new simulation (Animated GIF).</p>
+                <li>When you are satisfied with the selected area, tap the blue circle with the checkmark to confirm. If you want to cancel creating a simulation, tap the white circle with the X icon.</li>
+                <li>Once you have confirmed the simulation size and area, a bottom panel will appear where you are required to give the simulation a name and set the simulation duration. You can also turn on SMS or email notifications for this specific simulation. If these are toggled on, you will receive either an SMS or email notification when your simulation has been processed and is ready for download. Please make sure you have entered your phone number and/or email in the settings menu, otherwise you will not be able to turn on these notifications. Tap on the “Run Simulation” button to submit your simulation to the server for processing.</li>
+                <img class="screenshot" src="img/turn-notifications-on-sim-panel.png" width="300" alt="Simulation attributes panel." />
+                <p class="caption">Simulation attributes panel.</p>
+                <li>Once submitted, your simulation will appear in the simulation list. This is where you will be able to see the status of your simulation(s) and download them locally to your device.</li>
+            </ol>
+            <p><mark>Please Note: Before you can view a simulation, you will have to download it locally to your device. This ensures that any simulations are downloaded locally to your device for offline and disconnected use.</mark></p>
+            <!--Downloading & Viewing Simulations-->
+            <h3>Downloading &amp; Viewing a Simulation</h3>
+            <p>The simulation list is where you can select simulations to view and see the current status of your run simulations. This screen also gives you the ability to share, import and delete simulations.</p>
+            <p><mark>Please Note: The simulation list only shows simulations that you have run on your device. You cannot view simulations that have been run by other WindNinja Mobile users, unless they are ones you have imported.</mark></p>
+            <p>Simulations are color coded to indicate their status. The colors indicate the following statuses:</p>
+            <ul>
+                <li><span class="bold">Processing:</span> A red icon indicates that your simulation is still processing on the server and is not ready to be viewed.</li>
+                <li><span class="bold">Download:</span> A blue icon indicates that the simulation is complete and is ready for you to download the simulation to your device for viewing.</li>
+                <li><span class="bold">View:</span> A green icon indicates that the simulation is complete and has been downloaded locally to your device for viewing.</li>
+                <li><span class="bold">Failed:</span> A grey icon with an X in it indicates that the simulation has failed.</li>
+            </ul>
+            <!--Selecting a Simulation-->
+            <h4>Selecting &amp; Downloading a Simulation</h4>
+            <ol>
+                <li>To select and view a simulation, first open the Simulation List by taping the “Simulations” tab in the bottom tab bar. </li>
+                <li>Select the simulation in the list you want to view by tapping on it. It will automatically be loaded on to the map.</li>
+            </ol>
+            <p>If the simulation is blue, first tap on the simulation to download it, and then you will have to tap on it again to open it once the icon is green.</p>
+            <!--Viewing & Controlling a Simulation-->
+            <h4>Viewing &amp; Controlling a Simulation</h4>
+            <p>Once a simulation has been selected, it will be loaded onto the map. A bottom panel will appear that shows the simulation name and provide you with other controls, information and options.</p>
+            <p>The simulation will be loaded in a 2D top view by default. To view the simulation in 3D view and view different angles of the simulation, use the Map Gesture controls (tile/pinch/zoom/pan) identified above (these are the same gesture you use to navigate around the map). </p>
+            <img class="screenshot" src="img/viewing-sim.png" width="300" alt="Viewing a simulation and legend on the map in 3D view." />
+            <p class="caption">Viewing a simulation and legend on the map in 3D view.</p>
+            <p>The direction of the wind will be identified on the map with colored arrows. These colors indicate the windspeed. Please refer to the Legend section to learn more about viewing the legend.</p>
+            <p>When viewing a simulation, a simulation control panel appears at the bottom of the screen. This panel is home to the controls for the simulation. There is a set of tools located in the top right of the control panel. These tools will open things like the legend and zoom to the simulation extent on the map. </p>
+            <p>Please see below for information on the specific controls.></p>
+            <!--cycling Through Timestamps-->
+            <h4>Cycling Through Timestamps</h4>
+            <p>To manually cycle through the simulation, tap the previous and next buttons. A progress bar will be indicated where you are within the simulation duration, while a blue timestamp will indicate the exact time you are viewing the simulation at. You also have the ability to play a looping animation of the simulation. Please see below.</p>
+            <img class="screenshot" src="gifs/view-sim.gif" width="300" alt="Cycling through simulation timestamps and animation loop. (Animated GIF)" />
+            <p class="caption">Cycling through simulation timestamps and animation loop. (Animated GIF)</p>
+            <h4>Simulation Animation</h4>
+            <p>You can control the simulation animation loop by tapping the play and pause buttons. To turn on the animation loop, tap the play button. When playing, the simulation will automatically and constantly cycle through the timestamps of the simulation. To stop the animation loop, tap the pause button.</p>
+            <!--Legend-->
+            <h4>Legend</h4>
+            <p>A legend is provided to show the wind speed categories and colors that are identified by arrows on the map. To open the legend, tap the legend icon location in the top right of the simulation control panel. To close the legend, tap on the “Close” icon located in the top right of the legend panel.</p>
+            <!--Zoom to Simulaation Extent-->
+            <h4>Zoom to Simulation Extent</h4>
+            <p>If you need to reset the simulation view or zoom back to the simulation on the map, tap the square “Zoom to Simulation Extent” icon located in the top right of the simulation control panel.</p>
+            <h4>Coarse Weather Stations</h4>
+            <p>Tap the Wx icon located in the top right of the simulation control panel to view the coarse weather view. This button is a toggle. It will turn blue when turned on. to Turn it off, tap the Wx icon again. </p>
+            <!--Close Simulation-->
+            <h4>Close a Simulation</h4>
+            <p>To close a simulation, tap the close icon located in the top right of the simulation control panel. If you want to run a new simulation while viewing an existing simulation, you will first need to close the simulation you are viewing.</p>
+            <!--Sharing Simulation-->
+            <h3>Sharing a Simulation</h3>
+            <p>WindNinja Mobile gives you the ability to share simulations you have run with other WindNinja Mobile users. Each simulation has a unique identifier generated for it. This unique identifier is the code that is used to share and import simulations. To share a simulation, follow the steps below.</p>
+            <ol>
+                <li>Open the simulation list.</li>
+                <li>Tap the “Share” icon (right arrow) next to the simulation you want to share.</li>
+                <li>A unique identifier code will be generated for that simulation and you will be prompted with a variety of options to share the selected simulation.</li>
+                <li>Select the way you want to share the simulation.</li>
+            </ol>
+            <!--Importing Simulation-->
+            <h3>Importing a Simulation</h3>
+            <p>WindNinja Mobile gives you the ability to import and view simulations that have been run by other WindNinja Mobile users. Each simulation has a unique identifier generated for it. This unique identifier is the code that is used to share and import simulations. To import a simulation, follow the steps below.</p>
+            <ol>
+                <li>Open the simulation list.</li>
+                <li>Tap the blue circle with the plus icon, located in the bottom right corner of the screen.</li>
+                <li>A pop up will appear with a text input for you to enter to unique identifier code. You can either manually enter the unique identifier or paste the code by tapping and holding inside the text box until you are prompted to paste.</li>
+                <li>Tap “Ok” to import the simulation.</li>
+                <li>The imported simulation will now appear in the simulation list. You will have to download the simulation to your device before you view it.</li>
+            </ol>
+            <img class="screenshot" src="img/import-simulation.png" width="300" alt="Importing simulation pop up. Enter the unique identifier to import a simulation." />
+            <p class="caption">Importing simulation pop up. Enter the unique identifier to import a simulation.</p>
+            <!--Deleting Simulations-->
+            <h3>Deleting a Simulation</h3>
+            <p>You can delete a simulation from the simulation list by tapping the “Delete” icon next to the simulation you want to remove. You will be prompted to confirm the deletion before the simulation will be removed.</p>
+            <p><mark>Please Note: Once you delete a simulation, this cannot be undone. If you want to view a simulation for the deleted simulation’s area, you will have to create a new simulation.</mark></p>
+        </section>
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
