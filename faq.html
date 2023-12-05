@@ -364,7 +364,7 @@
                                                                                             </ul>  
                                                                                             The datetime string for the Times variable needs to be in the exact format as the Times variable in the example wrfout file.</li><br>
                                                                                                 <li>There needs to be a global attribute "MAP_PROJ" which defines the projection used for the WRF simulation. In the example wrfout file MAP_PROJ = 1 (which corresponds to LCC; 2 is Polar Stereographic, and 3 is Mercator). It's critical that you know what projection your simulation is in, otherwise the WindNinja initialization will not be correct (the predicted winds will not be located correctly in space).</li><br>
-                                                                                           <li>The required variable names are U10 (u-component of the wind at 10 m), V10 (v-component of the wind at 10 m), T2 (Temperature at 2 m), and QCLOUD (Fraction of cloud cover).</li>
+                                                                                           <li>The required variable names are U10 (u-component of the wind at 10 m), V10 (v-component of the wind at 10 m), T2 (temperature at 2 m), and QCLOUD (cloud water mixing ratio).</li>
                                                                                             </ol>
                                                                                             </p>
 									                  <br>
