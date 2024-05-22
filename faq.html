@@ -368,7 +368,17 @@
                                                                                             </ol>
                                                                                             </p>
 									                  <br>
-											  <p style="font-size:105%;">Alternatively, you could use the gridded initialization option. Although this option is not included in our official documentation (this functionality was added for internal use), we do have some instructions on how to set these kinds of runs up and users have successfully used this option. See <a href="https://github.com/firelab/windninja/issues/359">GitHub Issue #359</a> for details.<br> 
+											  <p style="font-size:105%;">Alternatively, you could use the gridded initialization option. Although this option is not included in our official documentation (this functionality was added for internal use), we do have some instructions on how to set these kinds of runs up and users have successfully used this option. See <a href="https://github.com/firelab/windninja/issues/510">GitHub Issue #510</a> for details.<br> 
+									                  </div>
+									                </div>
+									        </div>
+									      </div>
+									      <div class="faq_container">
+									        <div class="faq">
+									            <div class="faq_question"><h2>17. Can I initialize WindNinja with a historical forecast? </h2></div>
+									              <div class="faq_answer_container">
+									                <div class="faq_answer">
+												<p style="font-size:105%;"><i>WindNinja only has built-in support for downloading current forecasts. What if I want to initialize with a forecast from the past (i.e., a past cast)?</i><br><br> WindNinja currently supports two formats for past casts: 1. WRF-ARW NetCDF files and 2. archived HRRR. See FAQ 17 for instructions on initializing WindNinja with WRF-ARW NetCDF output. To initialize with archived HRRR, you will need to obtain the relevant HRRR forecast file from <a href="https://console.cloud.google.com/marketplace/product/noaa-public/hrrr?pli=1">Google Cloud Platform</a>. There are a few different file formats on this server. You'll want to download the files that have "wrfprs" in the name. Right now these archived HRRR forecasts can only be used in the WindNinja command line interface (CLI). You can find instructions for the CLI <a href="https://weather.firelab.org/windninja/tutorials/CLI_instructions.pdf">here</a>. We will be adding support for download and initialization via the WindNinja GUI soon.<br> 
 									                  </div>
 									                </div>
 									        </div>
