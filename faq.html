@@ -252,7 +252,7 @@
 									          <div class="faq_answer">
 									            <p style="font-size:105%;">
 																First, the elevation file must be one of the allowable file
-																formats (Arc/Info ASCII Raster (.asc), FARSITE landscape file (.lcp), GeoTiff (.tif),
+																formats (Arc/Info ASCII Raster (.asc), FARSITE landscape file (.tif/.lcp), GeoTiff (.tif),
 																ERDAS IMAGINE (.img)).  Second, the elevation file
 																must not have any areas without data (NO_DATA values).
 																See WindNinja Tutorial 1 in the help menu for more information
@@ -262,7 +262,8 @@
 																(about 30x30 miles).  Fourth, elevation files must be in units of meters.
 																 This means both the horizontal and vertical units.
 																 Last, if WindNinja 2.3.0 or newer is used, it must be georeferenced
-																 in a projected coordinate system.</p>
+																 in a "north up" projected coordinate system. We recommend using the best-fit UTM projection. A "north up" projection is required
+										    						because we use the standard meteorological convention for wind direction where a north wind is a wind from 0 degrees (e.g., north is "up").</p>
 									            <br>
 									            </div>
 									          </div>
