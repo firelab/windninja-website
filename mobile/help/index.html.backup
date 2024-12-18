@@ -33,7 +33,7 @@
 				</header>
 					<nav id="menu">
 						<ul class="links">
-							<li><a href="https://weather.firelab.org/windninja_api/index.html">API</a>
+							<li><a href="https://ninjastorm.firelab.org/windninja_api/">API</a>
 							<li><a href="../../publications/">Publications</a></li>
 							<li><a href="../../field/">Field Observations</a></li>
 							<li><a href="../../howdoes/">How Does WindNinja Work?</a></li>
