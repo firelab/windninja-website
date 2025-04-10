@@ -104,7 +104,7 @@
 									           <div class="faq_answer_container">
 									              <div class="faq_answer">
 																	<b>Windows</b>: Download the installer from
-																	<a href="http://www.firelab.org/windninja">firelab.org</a>
+																	<a href="https://research.fs.usda.gov/firelab/products/dataandtools/windninja">research.fs.usda.gov/firelab</a>
 																	 and save it to your computer.  Then, double-click on the installer in
 																	 this saved location.  Follow the installation instructions in the window that opens.
 																	  Once installed, use the Start menu to start WindNinja.
@@ -142,7 +142,7 @@
 									        <div class="faq_answer_container">
 									          <div class="faq_answer">
 									            <p style="font-size:105%;">
-																<a href="http://www.firelab.org/project/windwizard">WindWizard</a> is no longer available.
+																<a href="https://research.fs.usda.gov/treesearch/25996">WindWizard</a> is no longer available.
 									              There is now a conservation of mass and momentum solver in
 									              WindNinja which replaces the functionality of WindWizard.
 									              <br>
@@ -173,7 +173,7 @@
 									      <div class="faq_question"><h2>4. Is WindNinja faster than WindWizard? How much?</h2></div>
 									        <div class="faq_answer_container">
 									          <div class="faq_answer">
-															<a href="http://www.firelab.org/project/windwizard">WindWizard</a>
+															<a href="https://research.fs.usda.gov/treesearch/25996">WindWizard</a>
 															 is no longer available.
 									            There is now a conservation of mass and momentum solver in
 									            WindNinja which replaces the functionality of WindWizard. 
@@ -288,7 +288,7 @@
 									        <div class="faq_question"><h2>11. Have you compared results with different grid resolutions to know if it markedly changes wind behavior?</h2></div>
 									          <div class="faq_answer_container">
 									            <div class="faq_answer">
-									              <p style="font-size:105%;">Indeed we have. For an example and discussion, you could look at the images on pages 30-31 of <a href="http://www.firelab.org/document/forthofer-thesis">Jason Forthofer's master's thesis</a>.  Note that this terrain is fairly gentle though.  The appropriate grid resolution is dependent on the specific terrain and what winds you want to resolve. Probably one of the best things to do is to experiment with different computational (mesh) resolutions for your terrain to see how much difference there is (sensitivity).</p>
+									              <p style="font-size:105%;">Indeed we have. For an example and discussion, you could look at the images on pages 30-31 of <a href="https://research.fs.usda.gov/firelab/understory/modeling-wind-complex-terrain-use-fire-spread-prediction">Jason Forthofer's master's thesis</a>.  Note that this terrain is fairly gentle though.  The appropriate grid resolution is dependent on the specific terrain and what winds you want to resolve. Probably one of the best things to do is to experiment with different computational (mesh) resolutions for your terrain to see how much difference there is (sensitivity).</p>
 									              <br>
 									              </div>
 									            </div>
@@ -352,7 +352,7 @@
 									            <div class="faq_question"><h2>16. Can I use other weather model output to initialize WindNinja? </h2></div>
 									              <div class="faq_answer_container">
 									                <div class="faq_answer">
-                                                                                            <p style="font-size:105%;"><i>WindNinja has built-in support for a number of weather models provided by NCEP, but what if I have output from a different weather model or archived model output from one of the NCEP models?</i><br><br> In addition to the NCEP models that WindNinja can download for you, WindNinja can also handle output from the WRF-ARW model in NetCDF format (these files are often referred to as "wrfout" files). See <a href="https://weather.firelab.org/windninja/tutorials/WindNinja_tutorial4.pdf">Tutorial 4</a> for instructions on how to use wrfout files for initialization. Right now the NCEP model output we download from NOMADS and UCAR and WRF-ARW NetCDF output are the only model output formats that can be used to initialize WindNinja. We'd like to support additional models, but unfortunately, there are many formats that the weather model output is stored in. These formats differ not just in the file format (e.g., NetCDF, GRIB, etc.), but also in they way the time, geographic projection information, and output variables are stored and hanlded. This makes it very difficult to support all possible models, although we do hope to someday implement a method to allow initialization with arbitrary weather model formats.<br> 
+                                                                                            <p style="font-size:105%;"><i>WindNinja has built-in support for a number of weather models provided by NCEP, but what if I have output from a different weather model or archived model output from one of the NCEP models?</i><br><br> In addition to the NCEP models that WindNinja can download for you, WindNinja can also handle output from the WRF-ARW model in NetCDF format (these files are often referred to as "wrfout" files). See <a href="https://ninjastorm.firelab.org/windninja/tutorials/WindNinja_tutorial4.pdf">Tutorial 4</a> for instructions on how to use wrfout files for initialization. Right now the NCEP model output we download from NOMADS and UCAR and WRF-ARW NetCDF output are the only model output formats that can be used to initialize WindNinja. We'd like to support additional models, but unfortunately, there are many formats that the weather model output is stored in. These formats differ not just in the file format (e.g., NetCDF, GRIB, etc.), but also in they way the time, geographic projection information, and output variables are stored and hanlded. This makes it very difficult to support all possible models, although we do hope to someday implement a method to allow initialization with arbitrary weather model formats.<br> 
                                                                                 <br>
                                                                                 For now, if you want to use an unsupported weather model format for initialization, you could consider converting your model output to the WRF-ARW NetCDF format. Other users have done this successfully. You can see an example converter script <a href="files/convert_CHM-GEM.py">here</a> (provided by <a href="http://chrismarsh.ca/">Chris Marsh</a>) and an example wrfout file <a href="https://ninjastorm.firelab.org/data/wrfout_d04_2010-09-05_120000.nc">here</a>. To mimic a WRF-ARW NetCDF output file, you'll need the following:<br>
                                                                                             <ol>
@@ -379,7 +379,7 @@
 									            <div class="faq_question"><h2>17. Can I initialize WindNinja with a historical forecast? </h2></div>
 									              <div class="faq_answer_container">
 									                <div class="faq_answer">
-												<p style="font-size:105%;"><i>WindNinja only has built-in support for downloading current forecasts. What if I want to initialize with a forecast from the past (i.e., a past cast)?</i><br><br> WindNinja currently supports two formats for past casts: 1. WRF-ARW NetCDF files and 2. archived HRRR. See FAQ 17 for instructions on initializing WindNinja with WRF-ARW NetCDF output. To initialize with archived HRRR, you will need to obtain the relevant HRRR forecast file from <a href="https://console.cloud.google.com/marketplace/product/noaa-public/hrrr?pli=1">Google Cloud Platform</a>. There are a few different file formats on this server. You'll want to download the files that have "wrfprs" in the name. Right now these archived HRRR forecasts can only be used in the WindNinja command line interface (CLI). You can find instructions for the CLI <a href="https://weather.firelab.org/windninja/tutorials/CLI_instructions.pdf">here</a>. We will be adding support for download and initialization via the WindNinja GUI soon.<br> 
+												<p style="font-size:105%;"><i>WindNinja only has built-in support for downloading current forecasts. What if I want to initialize with a forecast from the past (i.e., a past cast)?</i><br><br> WindNinja currently supports two formats for past casts: 1. WRF-ARW NetCDF files and 2. archived HRRR. See FAQ 17 for instructions on initializing WindNinja with WRF-ARW NetCDF output. To initialize with archived HRRR, you will need to obtain the relevant HRRR forecast file from <a href="https://console.cloud.google.com/marketplace/product/noaa-public/hrrr?pli=1">Google Cloud Platform</a>. There are a few different file formats on this server. You'll want to download the files that have "wrfprs" in the name. Right now these archived HRRR forecasts can only be used in the WindNinja command line interface (CLI). You can find instructions for the CLI <a href="https://ninjastorm.firelab.org/windninja/tutorials/CLI_instructions.pdf">here</a>. We will be adding support for download and initialization via the WindNinja GUI soon.<br> 
 									                  </div>
 									                </div>
 									        </div>
@@ -400,7 +400,7 @@
 					<footer id="footer">
 						<div class="inner">
 							<p style="text-align:center;"><img src="https://avatars1.githubusercontent.com/u/3028309?v=3&s=200" alt "firelab"></p>
-							<p style="text-align:center;"><a href="http://firelab.org/">firelab.org</a></p>
+							<p style="text-align:center;"><a href="https://research.fs.usda.gov/firelab">research.fs.usda.gov/firelab</a></p>
 							<ul class="icons">
 							</ul>
 							<ul class="copyright">
