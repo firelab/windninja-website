@@ -24,4 +24,4 @@ jobs:
 
     - name: Deploy app 
       run: |
-        scp -o StrictHostKeyChecking=no -r ./windninja-website* octobot@ninjastorm.firelab.org:/var/www/html/windninja
+        scp -o StrictHostKeyChecking=no -r ./ octobot@ninjastorm.firelab.org:/var/www/html/windninja
