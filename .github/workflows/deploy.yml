@@ -22,8 +22,8 @@ jobs:
       run: |
         ssh -o StrictHostKeyChecking=no octobot@ninjastorm.firelab.org "
           if [ ! -d /var/www/html/windninja/.git ]; then
-            git clone https://github.com/firelab/windninja-website.git /var/www/html/windninja
+            sudo git clone https://github.com/firelab/windninja-website.git /var/www/html/windninja
           else
-            cd /var/www/html/windninja && git pull origin master
+            cd /var/www/html/windninja && sudo git pull origin master
           fi
         "
