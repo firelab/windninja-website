@@ -20,7 +20,7 @@ jobs:
 
     - name: Clean remote directory
       run: |
-        ssh -o StrictHostKeyChecking=no octobot@ninjastorm.firelab.org "rm -rf /var/www/html/windninja"
+        ssh -o StrictHostKeyChecking=no octobot@ninjastorm.firelab.org "sudo rm -rf /var/www/html/windninja"
 
     - name: Deploy app 
       run: |
