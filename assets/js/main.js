@@ -156,7 +156,13 @@
 							event.stopPropagation();
 							event.preventDefault();
 
-						// Target blank?
+							// Skip transition for direct .exe download
+							if (href.endsWith('.exe')) {
+								window.location.href = href;
+								return;
+							}
+
+							// Target blank?
 							if ($link.attr('target') == '_blank') {
 
 								// Open in new tab.
