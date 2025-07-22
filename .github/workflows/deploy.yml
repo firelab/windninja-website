@@ -17,13 +17,16 @@ jobs:
       uses: webfactory/ssh-agent@v0.7.0
       with:
         ssh-private-key: ${{ secrets.DEPLOY_KEY }}
-
+        
     - name: Deploy app
       run: |
         ssh -o StrictHostKeyChecking=no octobot@ninjastorm.firelab.org "
           if [ ! -d /var/www/html/windninja/.git ]; then
             sudo git clone https://github.com/firelab/windninja-website.git /var/www/html/windninja
           else
-            cd /var/www/html/windninja && sudo git pull origin master
+            cd /var/www/html/windninja && \
+            sudo git fetch origin && \
+            sudo git reset --hard origin/master && \
+            sudo git pull origin master
           fi
         "
