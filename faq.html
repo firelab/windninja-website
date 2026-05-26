@@ -383,7 +383,17 @@
 									                </div>
 									        </div>
 									      </div>
-                                                                        <hr>
+                                         <div class="faq_container">
+                                            <div class="faq">
+                                               <div class="faq_question"><h2>18. Are there differences in how a weather model initialization is handled between the two solvers? </h2></div>                                    
+                                                 <div class="faq_answer_container">
+                                                     <div class="faq_answer">
+                                                 <p style="font-size:105%;">Yes, due to differences in how the two solvers work, there are differences in how a weather model initialization is performed. The mass solver is driven by both boundary and initial conditions. The solver works to minimize the change in in the initial wind field while enforcing conservation of mass. For the mass solver, every weather model point influences the WindNinja cells around it. The conservation of mass and momentum solver (also referred to as the CFD solver) is driven by boundary conditions. The boundary conditions at the inlet(s) drive the flow in the CFD solver. For this solver, we use the average of the weather model grid that overlaps the WindNinja grid and apply that average value at the inlet boundary. You can find additional details <a href="https://ninjastorm.firelab.org/windninja/howdoes/solvers.html">here</a>.<br> 
+                                                      </div>
+                                                     </div>
+                                              </div>      
+                                          </div>
+                                          <hr>      
                                                                         <h2>Still have questions?</h2>
                                                                         </header>
                                                                         <p>Let us know! Send an email to the WindNinja support team.</p>
