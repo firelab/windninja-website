@@ -84,7 +84,7 @@
 											<ul style="font-size:20px">
 												<li>Solver for incompressible turbulent flow</li>
 												<li>Finite volume method</li>
-												<li>k-epsilon for turbulence</li>
+												<li>RNG k-Epsilon for turbulence</li>
 												<li>Incompressible</li>
 												<li>Semi-implicit method (simpleFoam)</li>
 												<!-- <a href="http://openfoam.org/"> <img src="http://firelab.github.io/windninja/assets/foam2.png" style="width:175px;height:65px;"> </a> -->
@@ -96,7 +96,7 @@
 										<h3>Computational Domain</h3>
 										<ul>
 										  <li>Native Solver:Native Mesher</li>
-										  <li>OpenFOAM solver: blockMesh, snappyHexMesh, extrudeMesh</li>
+										  <li>OpenFOAM solver: blockMesh, moveDynamicMesh, refineMesh</li>
 										  <li>Terrain Following hexahedral cells</li>
 										  <li>Cells grow vertically with height</li>
 										  <li>Top height set as f(max(dx|dy|dz))</li>
@@ -126,6 +126,8 @@
 												<h4>Conservation of Mass &
 														Momentum</h4>
 														<ul style="font-size:20px">
+														<li>Boundary condition driven (inlet boundary drives flow)</li>
+                                                        <li>Note: for weather model initialization - average of weather model field covering WindNinja domain is averaged and applied with vertical log profile at inlet</li>
 														<li>Interior initialized using same profiles as the inlet</li>
 														<li>Ground: non-equilibrium wall function</li>
 														<li>Sides and top: zero-gradient</li>
